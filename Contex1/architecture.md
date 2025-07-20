@@ -1,313 +1,313 @@
-# Architecture Documentation - [PROJECT_NAME]
+# Tài Liệu Kiến Trúc - [TÊN_DỰ_ÁN]
 
-This document provides a comprehensive overview of the system architecture, design decisions, and technical implementation details.
+Tài liệu này cung cấp tổng quan toàn diện về kiến trúc hệ thống, quyết định thiết kế và chi tiết triển khai kỹ thuật.
 
-## System Overview
+## Tổng Quan Hệ Thống
 
-**Project**: [PROJECT_NAME]
-**Architecture Pattern**: [ARCHITECTURE_PATTERN] (e.g., MVC, Microservices, Layered, etc.)
-**Deployment Model**: [DEPLOYMENT_MODEL] (e.g., Desktop App, Web App, Mobile App, etc.)
-**Target Platform**: [TARGET_PLATFORM] (e.g., Cross-platform, Web, iOS/Android, etc.)
+**Dự Án**: [TÊN_DỰ_ÁN]
+**Mô Hình Kiến Trúc**: [MÔ_HÌNH_KIẾN_TRÚC] (ví dụ: MVC, Microservices, Layered, v.v.)
+**Mô Hình Triển Khai**: [MÔ_HÌNH_TRIỂN_KHAI] (ví dụ: Desktop App, Web App, Mobile App, v.v.)
+**Nền Tảng Mục Tiêu**: [NỀN_TẢNG_MỤC_TIÊU] (ví dụ: Cross-platform, Web, iOS/Android, v.v.)
 
-### High-Level Architecture
+### Kiến Trúc Tổng Thể
 
 ```
-[ASCII DIAGRAM OF SYSTEM ARCHITECTURE]
+[SƠ ĐỒ ASCII CỦA KIẾN TRÚC HỆ THỐNG]
 
-Example:
+Ví dụ:
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Frontend      │◄──►│    Backend      │◄──►│    Database     │
 │   [TECH_STACK]  │    │   [TECH_STACK]  │    │   [TECH_STACK]  │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-## Technology Stack
+## Ngăn Xếp Công Nghệ
 
 ### Frontend
-- **Framework**: [FRONTEND_FRAMEWORK] (e.g., React, Vue, Angular, etc.)
-- **Language**: [FRONTEND_LANGUAGE] (e.g., TypeScript, JavaScript, etc.)
-- **Build Tool**: [BUILD_TOOL] (e.g., Vite, Webpack, etc.)
-- **Styling**: [STYLING_SOLUTION] (e.g., Tailwind CSS, Styled Components, etc.)
-- **State Management**: [STATE_MANAGEMENT] (e.g., Redux, Zustand, Context API, etc.)
+- **Framework**: [FRONTEND_FRAMEWORK] (ví dụ: React, Vue, Angular, v.v.)
+- **Ngôn Ngữ**: [FRONTEND_LANGUAGE] (ví dụ: TypeScript, JavaScript, v.v.)
+- **Công Cụ Build**: [BUILD_TOOL] (ví dụ: Vite, Webpack, v.v.)
+- **Styling**: [STYLING_SOLUTION] (ví dụ: Tailwind CSS, Styled Components, v.v.)
+- **Quản Lý State**: [STATE_MANAGEMENT] (ví dụ: Redux, Zustand, Context API, v.v.)
 
 ### Backend
-- **Framework**: [BACKEND_FRAMEWORK] (e.g., Express, FastAPI, Spring Boot, etc.)
-- **Language**: [BACKEND_LANGUAGE] (e.g., Node.js, Python, Java, Rust, etc.)
-- **Runtime**: [RUNTIME_ENVIRONMENT] (e.g., Node.js, Python, JVM, etc.)
-- **API Style**: [API_STYLE] (e.g., REST, GraphQL, gRPC, etc.)
+- **Framework**: [BACKEND_FRAMEWORK] (ví dụ: Express, FastAPI, Spring Boot, v.v.)
+- **Ngôn Ngữ**: [BACKEND_LANGUAGE] (ví dụ: Node.js, Python, Java, Rust, v.v.)
+- **Runtime**: [RUNTIME_ENVIRONMENT] (ví dụ: Node.js, Python, JVM, v.v.)
+- **Kiểu API**: [API_STYLE] (ví dụ: REST, GraphQL, gRPC, v.v.)
 
 ### Database
-- **Primary Database**: [PRIMARY_DB] (e.g., PostgreSQL, MongoDB, SQLite, etc.)
-- **Caching**: [CACHING_SOLUTION] (e.g., Redis, Memcached, In-memory, etc.)
-- **ORM/ODM**: [ORM_SOLUTION] (e.g., Prisma, Mongoose, SQLAlchemy, etc.)
+- **Database Chính**: [PRIMARY_DB] (ví dụ: PostgreSQL, MongoDB, SQLite, v.v.)
+- **Caching**: [CACHING_SOLUTION] (ví dụ: Redis, Memcached, In-memory, v.v.)
+- **ORM/ODM**: [ORM_SOLUTION] (ví dụ: Prisma, Mongoose, SQLAlchemy, v.v.)
 
-### Infrastructure
-- **Deployment**: [DEPLOYMENT_PLATFORM] (e.g., Docker, Kubernetes, Vercel, etc.)
-- **CI/CD**: [CICD_SOLUTION] (e.g., GitHub Actions, Jenkins, etc.)
-- **Monitoring**: [MONITORING_SOLUTION] (e.g., Sentry, DataDog, etc.)
-- **Authentication**: [AUTH_SOLUTION] (e.g., JWT, OAuth, Auth0, etc.)
+### Hạ Tầng
+- **Triển Khai**: [DEPLOYMENT_PLATFORM] (ví dụ: Docker, Kubernetes, Vercel, v.v.)
+- **CI/CD**: [CICD_SOLUTION] (ví dụ: GitHub Actions, Jenkins, v.v.)
+- **Monitoring**: [MONITORING_SOLUTION] (ví dụ: Sentry, DataDog, v.v.)
+- **Xác Thực**: [AUTH_SOLUTION] (ví dụ: JWT, OAuth, Auth0, v.v.)
 
-## Architecture Decisions
+## Quyết Định Kiến Trúc
 
-### Decision 1: [DECISION_TITLE]
-**Context**: [WHY_THIS_DECISION_WAS_NEEDED]
-**Decision**: [WHAT_WAS_DECIDED]
-**Rationale**: [WHY_THIS_APPROACH_WAS_CHOSEN]
-**Alternatives Considered**: [OTHER_OPTIONS_EVALUATED]
-**Trade-offs**: 
-- **Pros**: [BENEFITS_OF_THIS_APPROACH]
-- **Cons**: [DRAWBACKS_OF_THIS_APPROACH]
-**Impact**: [HOW_THIS_AFFECTS_THE_SYSTEM]
+### Quyết Định 1: [TIÊU_ĐỀ_QUYẾT_ĐỊNH]
+**Bối Cảnh**: [TẠI_SAO_QUYẾT_ĐỊNH_NÀY_CẦN_THIẾT]
+**Quyết Định**: [ĐIỀU_GÌ_ĐÃ_ĐƯỢC_QUYẾT_ĐỊNH]
+**Lý Do**: [TẠI_SAO_CÁCH_TIẾP_CẬN_NÀY_ĐƯỢC_CHỌN]
+**Các Lựa Chọn Khác Đã Xem Xét**: [CÁC_LỰA_CHỌN_KHÁC_ĐÃ_ĐÁNH_GIÁ]
+**Đánh Đổi**: 
+- **Ưu Điểm**: [LỢI_ÍCH_CỦA_CÁCH_TIẾP_CẬN_NÀY]
+- **Nhược Điểm**: [NHƯỢC_ĐIỂM_CỦA_CÁCH_TIẾP_CẬN_NÀY]
+**Tác Động**: [CÁCH_NÀY_ẢNH_HƯỞNG_ĐẾN_HỆ_THỐNG_NHƯ_THẾ_NÀO]
 
-### Decision 2: [DECISION_TITLE]
-**Context**: [WHY_THIS_DECISION_WAS_NEEDED]
-**Decision**: [WHAT_WAS_DECIDED]
-**Rationale**: [WHY_THIS_APPROACH_WAS_CHOSEN]
-**Alternatives Considered**: [OTHER_OPTIONS_EVALUATED]
-**Trade-offs**: 
-- **Pros**: [BENEFITS_OF_THIS_APPROACH]
-- **Cons**: [DRAWBACKS_OF_THIS_APPROACH]
-**Impact**: [HOW_THIS_AFFECTS_THE_SYSTEM]
+### Quyết Định 2: [TIÊU_ĐỀ_QUYẾT_ĐỊNH]
+**Bối Cảnh**: [TẠI_SAO_QUYẾT_ĐỊNH_NÀY_CẦN_THIẾT]
+**Quyết Định**: [ĐIỀU_GÌ_ĐÃ_ĐƯỢC_QUYẾT_ĐỊNH]
+**Lý Do**: [TẠI_SAO_CÁCH_TIẾP_CẬN_NÀY_ĐƯỢC_CHỌN]
+**Các Lựa Chọn Khác Đã Xem Xét**: [CÁC_LỰA_CHỌN_KHÁC_ĐÃ_ĐÁNH_GIÁ]
+**Đánh Đổi**: 
+- **Ưu Điểm**: [LỢI_ÍCH_CỦA_CÁCH_TIẾP_CẬN_NÀY]
+- **Nhược Điểm**: [NHƯỢC_ĐIỂM_CỦA_CÁCH_TIẾP_CẬN_NÀY]
+**Tác Động**: [CÁCH_NÀY_ẢNH_HƯỞNG_ĐẾN_HỆ_THỐNG_NHƯ_THẾ_NÀO]
 
-## System Components
+## Thành Phần Hệ Thống
 
-### Frontend Architecture
+### Kiến Trúc Frontend
 
-#### Component Structure
+#### Cấu Trúc Component
 ```
 src/
-├── components/          # Reusable UI components
-│   ├── common/         # Generic components
-│   ├── forms/          # Form-specific components
-│   └── layout/         # Layout components
-├── pages/              # Page-level components
+├── components/          # Các component UI có thể tái sử dụng
+│   ├── common/         # Các component chung
+│   ├── forms/          # Các component dành cho form
+│   └── layout/         # Các component layout
+├── pages/              # Các component cấp độ trang
 ├── hooks/              # Custom React hooks
-├── services/           # API and external service calls
-├── utils/              # Utility functions
-├── types/              # TypeScript type definitions
-└── styles/             # Global styles and themes
+├── services/           # API và các lời gọi dịch vụ bên ngoài
+├── utils/              # Các hàm tiện ích
+├── types/              # Định nghĩa kiểu TypeScript
+└── styles/             # Styles toàn cục và themes
 ```
 
-#### Key Frontend Patterns
+#### Các Pattern Frontend Chính
 - **Component Pattern**: [COMPONENT_ARCHITECTURE_PATTERN]
-- **State Management**: [STATE_MANAGEMENT_APPROACH]
+- **Quản Lý State**: [STATE_MANAGEMENT_APPROACH]
 - **Routing**: [ROUTING_STRATEGY]
-- **Error Handling**: [ERROR_HANDLING_APPROACH]
+- **Xử Lý Lỗi**: [ERROR_HANDLING_APPROACH]
 
-### Backend Architecture
+### Kiến Trúc Backend
 
-#### Service Structure
+#### Cấu Trúc Service
 ```
 src/
-├── controllers/        # Request handlers
-├── services/           # Business logic
-├── models/             # Data models
+├── controllers/        # Xử lý request
+├── services/           # Logic nghiệp vụ
+├── models/             # Mô hình dữ liệu
 ├── middleware/         # Express middleware
-├── routes/             # API route definitions
-├── utils/              # Utility functions
-├── config/             # Configuration files
-└── types/              # Type definitions
+├── routes/             # Định nghĩa route API
+├── utils/              # Các hàm tiện ích
+├── config/             # Các file cấu hình
+└── types/              # Định nghĩa kiểu
 ```
 
-#### Key Backend Patterns
-- **API Design**: [API_DESIGN_PATTERN]
-- **Data Access**: [DATA_ACCESS_PATTERN]
-- **Error Handling**: [ERROR_HANDLING_STRATEGY]
-- **Authentication**: [AUTH_IMPLEMENTATION]
+#### Các Pattern Backend Chính
+- **Thiết Kế API**: [API_DESIGN_PATTERN]
+- **Truy Cập Dữ Liệu**: [DATA_ACCESS_PATTERN]
+- **Xử Lý Lỗi**: [ERROR_HANDLING_STRATEGY]
+- **Xác Thực**: [AUTH_IMPLEMENTATION]
 
-### Database Design
+### Thiết Kế Database
 
-#### Schema Overview
+#### Tổng Quan Schema
 ```sql
--- Example schema structure
+-- Ví dụ cấu trúc schema
 [DATABASE_SCHEMA_EXAMPLE]
 ```
 
-#### Key Database Patterns
-- **Data Modeling**: [DATA_MODELING_APPROACH]
-- **Relationships**: [RELATIONSHIP_STRATEGY]
+#### Các Pattern Database Chính
+- **Mô Hình Dữ Liệu**: [DATA_MODELING_APPROACH]
+- **Mối Quan Hệ**: [RELATIONSHIP_STRATEGY]
 - **Indexing**: [INDEXING_STRATEGY]
 - **Migrations**: [MIGRATION_STRATEGY]
 
-## Data Flow
+## Luồng Dữ Liệu
 
-### Request/Response Flow
-1. **User Interaction**: [HOW_USER_INITIATES_ACTION]
-2. **Frontend Processing**: [FRONTEND_HANDLING]
-3. **API Communication**: [API_CALL_DETAILS]
-4. **Backend Processing**: [BACKEND_HANDLING]
-5. **Database Operations**: [DATABASE_OPERATIONS]
-6. **Response Path**: [RESPONSE_FLOW_BACK]
+### Luồng Request/Response
+1. **Tương Tác Người Dùng**: [HOW_USER_INITIATES_ACTION]
+2. **Xử Lý Frontend**: [FRONTEND_HANDLING]
+3. **Giao Tiếp API**: [API_CALL_DETAILS]
+4. **Xử Lý Backend**: [BACKEND_HANDLING]
+5. **Thao Tác Database**: [DATABASE_OPERATIONS]
+6. **Đường Dẫn Response**: [RESPONSE_FLOW_BACK]
 
-### State Management Flow
+### Luồng Quản Lý State
 ```
 [STATE_FLOW_DIAGRAM]
 
-Example:
+Ví dụ:
 User Action → Component → Hook → Service → API → Backend → Database
      ↓
 UI Update ← State Update ← Response ← Processing ← Query Result
 ```
 
-## Security Architecture
+## Kiến Trúc Bảo Mật
 
-### Authentication & Authorization
-- **Authentication Method**: [AUTH_METHOD]
-- **Session Management**: [SESSION_STRATEGY]
-- **Authorization Pattern**: [AUTHZ_PATTERN]
-- **Token Management**: [TOKEN_STRATEGY]
+### Xác Thực & Phân Quyền
+- **Phương Thức Xác Thực**: [AUTH_METHOD]
+- **Quản Lý Session**: [SESSION_STRATEGY]
+- **Mô Hình Phân Quyền**: [AUTHZ_PATTERN]
+- **Quản Lý Token**: [TOKEN_STRATEGY]
 
-### Security Measures
-- **Input Validation**: [VALIDATION_APPROACH]
-- **Data Sanitization**: [SANITIZATION_STRATEGY]
-- **CORS Policy**: [CORS_CONFIGURATION]
-- **Rate Limiting**: [RATE_LIMITING_STRATEGY]
-- **Encryption**: [ENCRYPTION_APPROACH]
+### Biện Pháp Bảo Mật
+- **Validation Input**: [VALIDATION_APPROACH]
+- **Làm Sạch Dữ Liệu**: [SANITIZATION_STRATEGY]
+- **Chính Sách CORS**: [CORS_CONFIGURATION]
+- **Giới Hạn Tốc Độ**: [RATE_LIMITING_STRATEGY]
+- **Mã Hóa**: [ENCRYPTION_APPROACH]
 
-## Performance Considerations
+## Cân Nhắc Hiệu Suất
 
-### Frontend Performance
-- **Bundle Optimization**: [BUNDLE_STRATEGY]
-- **Code Splitting**: [CODE_SPLITTING_APPROACH]
-- **Caching Strategy**: [FRONTEND_CACHING]
+### Hiệu Suất Frontend
+- **Tối Ưu Bundle**: [BUNDLE_STRATEGY]
+- **Chia Tách Code**: [CODE_SPLITTING_APPROACH]
+- **Chiến Lược Caching**: [FRONTEND_CACHING]
 - **Lazy Loading**: [LAZY_LOADING_IMPLEMENTATION]
 
-### Backend Performance
-- **Database Optimization**: [DB_OPTIMIZATION_STRATEGY]
-- **Caching Layers**: [BACKEND_CACHING]
+### Hiệu Suất Backend
+- **Tối Ưu Database**: [DB_OPTIMIZATION_STRATEGY]
+- **Lớp Caching**: [BACKEND_CACHING]
 - **Connection Pooling**: [CONNECTION_POOLING]
-- **Query Optimization**: [QUERY_OPTIMIZATION]
+- **Tối Ưu Query**: [QUERY_OPTIMIZATION]
 
-### Scalability Patterns
-- **Horizontal Scaling**: [HORIZONTAL_SCALING_APPROACH]
-- **Vertical Scaling**: [VERTICAL_SCALING_LIMITS]
-- **Load Balancing**: [LOAD_BALANCING_STRATEGY]
-- **Database Scaling**: [DB_SCALING_APPROACH]
+### Mô Hình Mở Rộng
+- **Mở Rộng Ngang**: [HORIZONTAL_SCALING_APPROACH]
+- **Mở Rộng Dọc**: [VERTICAL_SCALING_LIMITS]
+- **Cân Bằng Tải**: [LOAD_BALANCING_STRATEGY]
+- **Mở Rộng Database**: [DB_SCALING_APPROACH]
 
-## Development Workflow
+## Quy Trình Phát Triển
 
-### Build Process
+### Quy Trình Build
 ```bash
-# Development commands
+# Lệnh development
 [DEV_COMMANDS]
 
-# Build commands
+# Lệnh build
 [BUILD_COMMANDS]
 
-# Test commands
+# Lệnh test
 [TEST_COMMANDS]
 
-# Deployment commands
+# Lệnh deployment
 [DEPLOY_COMMANDS]
 ```
 
-### Environment Configuration
+### Cấu Hình Môi Trường
 - **Development**: [DEV_CONFIG_DETAILS]
 - **Testing**: [TEST_CONFIG_DETAILS]
 - **Staging**: [STAGING_CONFIG_DETAILS]
 - **Production**: [PROD_CONFIG_DETAILS]
 
-## Integration Points
+## Điểm Tích Hợp
 
-### External Services
-- **Service 1**: [SERVICE_NAME] - [PURPOSE_AND_INTEGRATION_METHOD]
-- **Service 2**: [SERVICE_NAME] - [PURPOSE_AND_INTEGRATION_METHOD]
-- **Service 3**: [SERVICE_NAME] - [PURPOSE_AND_INTEGRATION_METHOD]
+### Dịch Vụ Bên Ngoài
+- **Dịch Vụ 1**: [SERVICE_NAME] - [PURPOSE_AND_INTEGRATION_METHOD]
+- **Dịch Vụ 2**: [SERVICE_NAME] - [PURPOSE_AND_INTEGRATION_METHOD]
+- **Dịch Vụ 3**: [SERVICE_NAME] - [PURPOSE_AND_INTEGRATION_METHOD]
 
-### API Integrations
-- **Internal APIs**: [INTERNAL_API_DETAILS]
-- **External APIs**: [EXTERNAL_API_DETAILS]
+### Tích Hợp API
+- **API Nội Bộ**: [INTERNAL_API_DETAILS]
+- **API Bên Ngoài**: [EXTERNAL_API_DETAILS]
 - **Webhooks**: [WEBHOOK_IMPLEMENTATION]
-- **Event Handling**: [EVENT_HANDLING_STRATEGY]
+- **Xử Lý Sự Kiện**: [EVENT_HANDLING_STRATEGY]
 
-## Deployment Architecture
+## Kiến Trúc Triển Khai
 
-### Infrastructure
+### Hạ Tầng
 ```
 [DEPLOYMENT_DIAGRAM]
 
-Example:
+Ví dụ:
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │   CDN       │    │   App       │    │  Database   │
 │   [PROVIDER]│◄──►│  [PLATFORM] │◄──►│ [PROVIDER]  │
 └─────────────┘    └─────────────┘    └─────────────┘
 ```
 
-### Deployment Strategy
-- **Deployment Method**: [DEPLOYMENT_METHOD]
-- **Environment Promotion**: [PROMOTION_STRATEGY]
-- **Rollback Strategy**: [ROLLBACK_APPROACH]
-- **Health Checks**: [HEALTH_CHECK_IMPLEMENTATION]
+### Chiến Lược Triển Khai
+- **Phương Thức Triển Khai**: [DEPLOYMENT_METHOD]
+- **Thăng Cấp Môi Trường**: [PROMOTION_STRATEGY]
+- **Chiến Lược Rollback**: [ROLLBACK_APPROACH]
+- **Kiểm Tra Sức Khỏe**: [HEALTH_CHECK_IMPLEMENTATION]
 
-## Monitoring & Observability
+## Giám Sát & Khả Năng Quan Sát
 
 ### Logging
-- **Log Levels**: [LOG_LEVEL_STRATEGY]
-- **Log Aggregation**: [LOG_AGGREGATION_TOOL]
-- **Log Retention**: [LOG_RETENTION_POLICY]
+- **Cấp Độ Log**: [LOG_LEVEL_STRATEGY]
+- **Tập Hợp Log**: [LOG_AGGREGATION_TOOL]
+- **Lưu Trữ Log**: [LOG_RETENTION_POLICY]
 
 ### Metrics
-- **Application Metrics**: [APP_METRICS_TRACKED]
-- **Infrastructure Metrics**: [INFRA_METRICS_TRACKED]
-- **Business Metrics**: [BUSINESS_METRICS_TRACKED]
+- **Metrics Ứng Dụng**: [APP_METRICS_TRACKED]
+- **Metrics Hạ Tầng**: [INFRA_METRICS_TRACKED]
+- **Metrics Nghiệp Vụ**: [BUSINESS_METRICS_TRACKED]
 
-### Alerting
-- **Alert Conditions**: [ALERT_CONDITIONS]
-- **Notification Channels**: [NOTIFICATION_METHODS]
-- **Escalation Procedures**: [ESCALATION_STRATEGY]
+### Cảnh Báo
+- **Điều Kiện Cảnh Báo**: [ALERT_CONDITIONS]
+- **Kênh Thông Báo**: [NOTIFICATION_METHODS]
+- **Quy Trình Báo Cáo**: [ESCALATION_STRATEGY]
 
-## Testing Strategy
+## Chiến Lược Kiểm Thử
 
-### Testing Pyramid
+### Kim Tự Tháp Kiểm Thử
 - **Unit Tests**: [UNIT_TEST_APPROACH]
 - **Integration Tests**: [INTEGRATION_TEST_APPROACH]
 - **End-to-End Tests**: [E2E_TEST_APPROACH]
 - **Performance Tests**: [PERFORMANCE_TEST_APPROACH]
 
-### Test Infrastructure
-- **Test Frameworks**: [TEST_FRAMEWORKS_USED]
-- **Test Data Management**: [TEST_DATA_STRATEGY]
-- **CI/CD Integration**: [TEST_AUTOMATION_STRATEGY]
+### Hạ Tầng Kiểm Thử
+- **Framework Kiểm Thử**: [TEST_FRAMEWORKS_USED]
+- **Quản Lý Dữ Liệu Test**: [TEST_DATA_STRATEGY]
+- **Tích Hợp CI/CD**: [TEST_AUTOMATION_STRATEGY]
 
-## Future Considerations
+## Cân Nhắc Tương Lai
 
-### Planned Improvements
-- **Short-term (Next 3 months)**:
+### Cải Tiến Đã Lên Kế Hoạch
+- **Ngắn hạn (3 tháng tới)**:
   - [IMPROVEMENT_1]
   - [IMPROVEMENT_2]
   - [IMPROVEMENT_3]
 
-- **Medium-term (3-12 months)**:
+- **Trung hạn (3-12 tháng)**:
   - [IMPROVEMENT_1]
   - [IMPROVEMENT_2]
   - [IMPROVEMENT_3]
 
-- **Long-term (1+ years)**:
+- **Dài hạn (1+ năm)**:
   - [IMPROVEMENT_1]
   - [IMPROVEMENT_2]
   - [IMPROVEMENT_3]
 
-### Technical Debt
-- **Current Debt Items**: [DEBT_ITEMS]
-- **Debt Reduction Plan**: [DEBT_REDUCTION_STRATEGY]
-- **Debt Prevention**: [DEBT_PREVENTION_MEASURES]
+### Nợ Kỹ Thuật
+- **Các Mục Nợ Hiện Tại**: [DEBT_ITEMS]
+- **Kế Hoạch Giảm Nợ**: [DEBT_REDUCTION_STRATEGY]
+- **Phòng Ngừa Nợ**: [DEBT_PREVENTION_MEASURES]
 
-### Scalability Roadmap
-- **Current Capacity**: [CURRENT_LIMITS]
-- **Scaling Triggers**: [WHEN_TO_SCALE]
-- **Scaling Plan**: [HOW_TO_SCALE]
+### Lộ Trình Mở Rộng
+- **Khả Năng Hiện Tại**: [CURRENT_LIMITS]
+- **Điều Kiện Mở Rộng**: [WHEN_TO_SCALE]
+- **Kế Hoạch Mở Rộng**: [HOW_TO_SCALE]
 
 ---
 
-**Template Usage Instructions:**
-1. Replace all [PLACEHOLDER] values with project-specific information
-2. Update diagrams with actual system architecture
-3. Add specific technology versions and configurations
-4. Include actual code examples where helpful
-5. Keep this document updated as architecture evolves
+**Hướng Dẫn Sử Dụng Template:**
+1. Thay thế tất cả giá trị [PLACEHOLDER] bằng thông tin cụ thể của dự án
+2. Cập nhật sơ đồ với kiến trúc hệ thống thực tế
+3. Thêm phiên bản và cấu hình công nghệ cụ thể
+4. Bao gồm các ví dụ code thực tế khi hữu ích
+5. Giữ tài liệu này được cập nhật khi kiến trúc phát triển
 
-**Maintenance Guidelines:**
-- Review and update quarterly
-- Update after major architectural changes
-- Include new team members in architecture reviews
-- Use this as reference for technical decisions
+**Hướng Dẫn Bảo Trì:**
+- Review và cập nhật hàng quý
+- Cập nhật sau các thay đổi kiến trúc lớn
+- Bao gồm các thành viên mới trong việc review kiến trúc
+- Sử dụng làm tài liệu tham khảo cho các quyết định kỹ thuật

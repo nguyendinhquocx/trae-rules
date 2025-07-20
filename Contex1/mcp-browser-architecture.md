@@ -1,45 +1,45 @@
-# Protocollie - Architecture & Design Document
+# Protocollie - Tài Liệu Kiến Trúc & Thiết Kế
 
-## Overview
+## Tổng Quan
 
-Protocollie is a desktop application built with Tauri 2.0 that serves as a comprehensive testing and exploration tool for Model Context Protocol servers. Similar to Postman for APIs, it allows developers to connect to multiple MCP servers, explore their capabilities, and test their functionality in real-time.
+Protocollie là một ứng dụng desktop được xây dựng với Tauri 2.0, phục vụ như một công cụ kiểm thử và khám phá toàn diện cho các Model Context Protocol servers. Tương tự như Postman cho APIs, nó cho phép các nhà phát triển kết nối với nhiều MCP servers, khám phá khả năng của chúng và kiểm thử chức năng trong thời gian thực.
 
-## Target Users
+## Người Dùng Mục Tiêu
 
-Protocollie is designed for **MCP server developers**, **AI/LLM integration engineers**, and **technical product managers** who need to rapidly prototype, test, and debug MCP implementations. Just as early Postman users were API developers tired of using curl commands, Protocollie serves developers building AI-powered tools who need a professional interface to understand what MCP servers expose, test tool calls with complex arguments, and validate responses before integrating them into production applications.
+Protocollie được thiết kế cho **các nhà phát triển MCP server**, **kỹ sư tích hợp AI/LLM**, và **quản lý sản phẩm kỹ thuật** cần tạo nguyên mẫu nhanh, kiểm thử và debug các triển khai MCP. Giống như những người dùng Postman đầu tiên là các nhà phát triển API mệt mỏi với việc sử dụng lệnh curl, Protocollie phục vụ các nhà phát triển xây dựng công cụ AI cần một giao diện chuyên nghiệp để hiểu những gì MCP servers cung cấp, kiểm thử các lời gọi tool với tham số phức tạp, và xác thực phản hồi trước khi tích hợp vào ứng dụng production.
 
-## Core Architecture
+## Kiến Trúc Cốt Lõi
 
-### Technology Stack
+### Ngăn Xếp Công Nghệ
 
-- **Frontend**: React/TypeScript with Tailwind CSS
-- **Backend**: Rust with Tauri 2.0
-- **MCP Integration**: Direct system Node.js processes with JSON-RPC protocol
-- **Node.js Runtime**: System Node.js (users have Node.js installed as MCP developers)
-- **Data Storage**: Hybrid approach (SQLite + in-memory + JSON)
-- **IPC**: Tauri's command system + direct process stdin/stdout communication
+- **Frontend**: React/TypeScript với Tailwind CSS
+- **Backend**: Rust với Tauri 2.0
+- **Tích Hợp MCP**: Các tiến trình Node.js hệ thống trực tiếp với giao thức JSON-RPC
+- **Node.js Runtime**: Node.js hệ thống (người dùng đã cài đặt Node.js như các nhà phát triển MCP)
+- **Lưu Trữ Dữ Liệu**: Phương pháp kết hợp (SQLite + in-memory + JSON)
+- **IPC**: Hệ thống lệnh của Tauri + giao tiếp stdin/stdout tiến trình trực tiếp
 
-### Architecture Decision Rationale
+### Lý Do Quyết Định Kiến Trúc
 
-We chose to use direct system Node.js processes instead of bundled sidecars or Rust MCP implementations for several key reasons:
+Chúng tôi chọn sử dụng các tiến trình Node.js hệ thống trực tiếp thay vì bundled sidecars hoặc triển khai MCP bằng Rust vì một số lý do chính:
 
-1. **Target Audience Alignment**: MCP developers already have Node.js installed for most MCP servers (`npx`, `npm` packages)
-2. **Simplified Architecture**: Direct process spawning is simpler than complex sidecar coordination and bundling
-3. **Universal Command Support**: Works with any MCP server type - `npx`, `python`, `ruby`, custom binaries
-4. **Real-world Usage**: Matches how developers actually run MCP servers in development and production
-5. **Enhanced Error Messaging**: Can provide specific guidance for missing dependencies with installation instructions
+1. **Phù Hợp Với Đối Tượng Mục Tiêu**: Các nhà phát triển MCP đã cài đặt Node.js cho hầu hết MCP servers (`npx`, `npm` packages)
+2. **Kiến Trúc Đơn Giản**: Tạo tiến trình trực tiếp đơn giản hơn việc điều phối và bundling sidecar phức tạp
+3. **Hỗ Trợ Lệnh Toàn Diện**: Hoạt động với bất kỳ loại MCP server nào - `npx`, `python`, `ruby`, custom binaries
+4. **Sử Dụng Thực Tế**: Phù hợp với cách các nhà phát triển thực sự chạy MCP servers trong development và production
+5. **Thông Báo Lỗi Nâng Cao**: Có thể cung cấp hướng dẫn cụ thể cho các dependency bị thiếu với hướng dẫn cài đặt
 
-### High-Level Architecture
+### Kiến Trúc Tổng Thể
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    Frontend (React/TS)                       │
-│                  - Dynamic server management UI              │
-│                  - Tool execution and result visualization   │
+│                  - Giao diện quản lý server động            │
+│                  - Thực thi tool và hiển thị kết quả        │
 ├─────────────────────────────────────────────────────────────┤
 │                    Tauri IPC Bridge                          │
-│                  - Type-safe command interface               │
-│                  - Server lifecycle management               │
+│                  - Giao diện lệnh type-safe                 │
+│                  - Quản lý vòng đời server                  │
 ├─────────────────────────────────────────────────────────────┤
 │                    Rust Backend (Tauri)                      │
 │  ┌─────────────────────────────────────────────────────┐   │
@@ -51,8 +51,8 @@ We chose to use direct system Node.js processes instead of bundled sidecars or R
 │  │  └─────────────┘  └─────────────┘  └────────────┘ │   │
 │  └─────────────────────────────────────────────────────┘   │
 ├─────────────────────────────────────────────────────────────┤
-│              Multiple MCP Server Processes                   │
-│               (One process per server connection)            │
+│              Nhiều Tiến Trình MCP Server                     │
+│               (Một tiến trình cho mỗi kết nối server)        │
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐       │
 │  │    node     │  │     npx     │  │   python    │       │
 │  │ script.cjs  │  │  @mcp/git   │  │  server.py  │       │
@@ -62,218 +62,222 @@ We chose to use direct system Node.js processes instead of bundled sidecars or R
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## Backend Design
+## Thiết Kế Backend
 
-### Core Components
+### Thành Phần Cốt Lõi
 
 #### 1. MCP Process Manager (Rust)
-See `mcp_process.rs` for implementation. Key methods:
-- `MCPProcess::start(command, args)` - Spawn MCP server with stdio pipes
-- `send_initialize()` - MCP protocol handshake
-- `execute_mcp_tool(tool_name, arguments)` - Execute tools via JSON-RPC
-- `list_mcp_tools()` - Discover available tools
-- Enhanced Node.js detection with helpful error messages
+Xem `mcp_process.rs` để biết triển khai. Các phương thức chính:
+- `MCPProcess::start(command, args)` - Tạo MCP server với stdio pipes
+- `send_initialize()` - Bắt tay giao thức MCP
+- `execute_mcp_tool(tool_name, arguments)` - Thực thi tools qua JSON-RPC
+- `list_mcp_tools()` - Khám phá các tools có sẵn
+- Phát hiện Node.js nâng cao với thông báo lỗi hữu ích
 
 #### 2. Global Process Registry  
-See `mcp_process.rs:279` - Central management using `HashMap<String, MCPProcess>`
+Xem `mcp_process.rs:279` - Quản lý tập trung sử dụng `HashMap<String, MCPProcess>`
 
 #### 3. Tauri Commands
-See `server_commands.rs` for all Tauri command implementations:
-- `connect_server()`, `disconnect_server()` - Server lifecycle
-- `list_tools()`, `execute_tool()` - Tool operations  
-- `add_server()`, `update_server()`, `delete_server()` - Configuration management
+Xem `server_commands.rs` cho tất cả triển khai Tauri command:
+- `connect_server()`, `disconnect_server()` - Vòng đời server
+- `list_tools()`, `execute_tool()` - Các thao tác tool  
+- `add_server()`, `update_server()`, `delete_server()` - Quản lý cấu hình
 
 #### 4. Data Storage Layer
-See `db.rs` for SQLite implementation with servers, history, collections, and preferences tables.
+Xem `db.rs` cho triển khai SQLite với các bảng servers, history, collections và preferences.
 
-### Distribution Strategy
+### Chiến Lược Phân Phối
 
-**No bundling required:**
-- Application uses system Node.js directly
-- No platform-specific binaries to generate or maintain
-- Smaller app distribution size
-- Simpler build process
+**Không cần bundling:**
+- Ứng dụng sử dụng Node.js hệ thống trực tiếp
+- Không có binaries cụ thể cho platform để tạo hoặc duy trì
+- Kích thước phân phối ứng dụng nhỏ hơn
+- Quy trình build đơn giản hơn
 
-**System requirements:**
-- Node.js installed for Node.js-based MCP servers (`node`, `npx` commands)
-- Python installed for Python-based MCP servers
-- Other runtimes as needed by specific MCP servers
+**Yêu cầu hệ thống:**
+- Node.js được cài đặt cho các MCP servers dựa trên Node.js (lệnh `node`, `npx`)
+- Python được cài đặt cho các MCP servers dựa trên Python
+- Các runtime khác theo yêu cầu của MCP servers cụ thể
 
-**User guidance:**
-- Clear error messages when dependencies are missing
-- Installation instructions for Node.js/Python/other runtimes
-- Links to official installation guides
-- Platform-specific package manager commands
+**Hướng dẫn người dùng:**
+- Thông báo lỗi rõ ràng khi thiếu dependencies
+- Hướng dẫn cài đặt cho Node.js/Python/các runtime khác
+- Liên kết đến hướng dẫn cài đặt chính thức
+- Lệnh package manager cụ thể cho platform
 
-## Frontend Design
+## Thiết Kế Frontend
 
-### Component Structure
-See `src/components/` for implementation:
-- `ui/` - Reusable UI primitives (Modal, Button, Input, Card, ErrorBoundary)
-- `forms/` - Form-specific components with validation logic (AddServerForm, EditServerForm)
-- `layout/` - Layout and navigation components:
-  - `Layout` - Three-panel layout structure with resizable panels
-  - `Header` - Enhanced header with branding, theme toggle, and navigation
-  - `Sidebar` - Sectioned navigation with server management
-  - `MainContent` - Dynamic content area with breadcrumb navigation and contextual rendering
-  - `ToolSelector` - Tool selection dropdown with search and filtering
-  - `ToolDisplay` - Tool execution interface with parameter forms
-  - `RightPanel` - Contextual information panel (expandable for future features)
-- `hooks/` - Custom hooks for state management and side effects
-- `types/` - TypeScript interfaces and type definitions
+### Cấu Trúc Component
+Xem `src/components/` để biết triển khai:
+- `ui/` - Các UI primitives có thể tái sử dụng (Modal, Button, Input, Card, ErrorBoundary)
+- `forms/` - Các components cụ thể cho form với logic validation (AddServerForm, EditServerForm)
+- `layout/` - Các components layout và navigation:
+  - `Layout` - Cấu trúc layout ba panel với các panel có thể thay đổi kích thước
+  - `Header` - Header nâng cao với branding, theme toggle và navigation
+  - `Sidebar` - Navigation có phân mục với quản lý server
+  - `MainContent` - Khu vực nội dung động với breadcrumb navigation và rendering theo ngữ cảnh
+  - `ToolSelector` - Dropdown chọn tool với tìm kiếm và lọc
+  - `ToolDisplay` - Giao diện thực thi tool với parameter forms
+  - `RightPanel` - Panel thông tin theo ngữ cảnh (có thể mở rộng cho các tính năng tương lai)
+- `hooks/` - Custom hooks cho quản lý state và side effects
+- `types/` - Các interfaces TypeScript và định nghĩa type
 
-### Key Features Implemented
+### Các Tính Năng Chính Đã Triển Khai
 
-1. **Professional Three-Panel Layout** - Resizable panels with sidebar, main content, and right panel
-2. **Enhanced Header** - Branding, theme toggle, and workspace selector
-3. **Organized Sidebar Navigation** - Sectioned design with server management and search
-4. **Dynamic Main Content** - Context-aware content with breadcrumb navigation
-5. **Tool Selection Interface** - Dropdown with search, filtering, and metadata display
-6. **Server Management** - Add/edit/remove server configurations with real-time connection status
-7. **Tool Discovery** - Dynamic tool listing with parameter information and search
-8. **Tool Execution** - Complex parameter forms with validation and execution tracking
-9. **Request History** - Comprehensive execution tracking with contextual filtering and detailed inspection
-10. **Context-Aware Right Panel** - Tool documentation, filtered execution history, and server information
+1. **Layout Ba Panel Chuyên Nghiệp** - Các panel có thể thay đổi kích thước với sidebar, nội dung chính và panel phải
+2. **Header Nâng Cao** - Branding, theme toggle và workspace selector
+3. **Sidebar Navigation Có Tổ Chức** - Thiết kế có phân mục với quản lý server và tìm kiếm
+4. **Nội Dung Chính Động** - Nội dung nhận biết ngữ cảnh với breadcrumb navigation
+5. **Giao Diện Chọn Tool** - Dropdown với tìm kiếm, lọc và hiển thị metadata
+6. **Quản Lý Server** - Thêm/sửa/xóa cấu hình server với trạng thái kết nối thời gian thực
+7. **Khám Phá Tool** - Danh sách tool động với thông tin parameter và tìm kiếm
+8. **Thực Thi Tool** - Forms parameter phức tạp với validation và theo dõi thực thi
+9. **Lịch Sử Request** - Theo dõi thực thi toàn diện với lọc theo ngữ cảnh và kiểm tra chi tiết
+10. **Panel Phải Nhận Biết Ngữ Cảnh** - Tài liệu tool, lịch sử thực thi được lọc và thông tin server
 
-## Key Benefits of System Node.js Architecture
+## Lợi Ích Chính Của Kiến Trúc System Node.js
 
-### 1. **Target Audience Alignment**
-- MCP developers already have Node.js installed for most servers
-- No additional dependencies - users need Node.js anyway for `npx` commands
-- Smaller app distribution size (no bundled Node.js binaries)
-- Matches real-world development workflows
+### 1. **Phù Hợp Với Đối Tượng Mục Tiêu**
+- Các nhà phát triển MCP đã cài đặt Node.js cho hầu hết servers
+- Không có dependencies bổ sung - người dùng cần Node.js cho lệnh `npx` anyway
+- Kích thước phân phối ứng dụng nhỏ hơn (không có bundled Node.js binaries)
+- Phù hợp với quy trình phát triển thực tế
 
-### 2. **Universal Command Support**
-- Works with any MCP server type: `node`, `npx`, `python`, `ruby`, custom binaries
-- Enhanced error messaging with specific installation guidance
-- Support for the entire MCP ecosystem out of the box
-- No restrictions based on runtime or language
+### 2. **Hỗ Trợ Lệnh Toàn Diện**
+- Hoạt động với bất kỳ loại MCP server nào: `node`, `npx`, `python`, `ruby`, custom binaries
+- Thông báo lỗi nâng cao với hướng dẫn cài đặt cụ thể
+- Hỗ trợ toàn bộ hệ sinh thái MCP ngay từ đầu
+- Không có hạn chế dựa trên runtime hoặc ngôn ngữ
 
-### 3. **Simplified Architecture**
-- Direct process spawning - no complex sidecar coordination
-- One process per MCP server with independent stdio communication
-- Easier debugging and maintenance
-- Clean JSON-RPC protocol implementation
+### 3. **Kiến Trúc Đơn Giản**
+- Tạo tiến trình trực tiếp - không có điều phối sidecar phức tạp
+- Một tiến trình cho mỗi MCP server với giao tiếp stdio độc lập
+- Debug và bảo trì dễ dàng hơn
+- Triển khai giao thức JSON-RPC sạch sẽ
 
-### 4. **True Process Isolation**
-- Each MCP server runs in its own OS process
-- Crashes don't affect other servers or the main app
-- Individual process lifecycle management
-- Clean resource cleanup and management
+### 4. **Cô Lập Tiến Trình Thực Sự**
+- Mỗi MCP server chạy trong tiến trình OS riêng
+- Crashes không ảnh hưởng đến servers khác hoặc ứng dụng chính
+- Quản lý vòng đời tiến trình riêng lẻ
+- Dọn dẹp và quản lý tài nguyên sạch sẽ
 
-## Development Phases
+## Các Giai Đoạn Phát Triển
 
-### Phase 1: Core MVP ✅ (41/41 stories completed)
-- Basic stdio transport support ✅
-- Server connection management ✅  
-- Tool exploration and execution ✅
-- Request history tracking ✅
+### Phase 1: Core MVP ✅ (41/41 câu chuyện hoàn thành)
+- Hỗ trợ stdio transport cơ bản ✅
+- Quản lý kết nối server ✅  
+- Khám phá và thực thi tool ✅
+- Theo dõi lịch sử request ✅
 
-### Phase 2: Enhanced Tool Execution UX & Professional Design ✅ (22/22 stories completed)
-**Goal**: Transform from functional MVP to polished professional dev tool
+### Phase 2: Enhanced Tool Execution UX & Professional Design ✅ (22/22 câu chuyện hoàn thành)
+**Mục tiêu**: Chuyển đổi từ MVP chức năng thành công cụ dev chuyên nghiệp được đánh bóng
 
-**Phase 2.0: Professional Layout Foundation ✅ (6/6 stories completed)**
-- Three-panel layout structure ✅
-- Enhanced header with navigation ✅
-- Redesigned left sidebar navigation ✅
-- Tool selection dropdown in main panel ✅
-- Dynamic main content area ✅
-- Right panel context system ✅
+**Phase 2.0: Professional Layout Foundation ✅ (6/6 câu chuyện hoàn thành)**
+- Cấu trúc layout ba panel ✅
+- Header nâng cao với navigation ✅
+- Thiết kế lại left sidebar navigation ✅
+- Dropdown chọn tool trong main panel ✅
+- Khu vực nội dung chính động ✅
+- Hệ thống ngữ cảnh right panel ✅
 
-**Phase 2a: Enhanced Tool Execution Interface ✅ (4/4 stories completed)**
-- Advanced parameter input forms with Monaco Editor ✅
-- Syntax highlighting for results ✅
-- Tool execution templates ✅
-- Request history enhancement ✅
+**Phase 2a: Enhanced Tool Execution Interface ✅ (4/4 câu chuyện hoàn thành)**
+- Forms nhập parameter nâng cao với Monaco Editor ✅
+- Syntax highlighting cho kết quả ✅
+- Templates thực thi tool ✅
+- Nâng cao lịch sử request ✅
 
-**Phase 2b: Professional UI/UX Design System ✅ (5/5 stories completed)**
-- Comprehensive design system ✅
-- Enhanced dark/light theme system ✅
-- Professional header and navigation ✅
-- Enhanced server management UI ✅
-- Tool discovery and organization ✅
+**Phase 2b: Professional UI/UX Design System ✅ (5/5 câu chuyện hoàn thành)**
+- Hệ thống thiết kế toàn diện ✅
+- Hệ thống theme dark/light nâng cao ✅
+- Header và navigation chuyên nghiệp ✅
+- UI quản lý server nâng cao ✅
+- Khám phá và tổ chức tool ✅
 
-**Phase 2c: Developer Experience Enhancements ✅ (2/2 stories completed)**
-- Code editor integration with Monaco ✅
-- Response viewer enhancement ✅
+**Phase 2c: Developer Experience Enhancements ✅ (2/2 câu chuyện hoàn thành)**
+- Tích hợp code editor với Monaco ✅
+- Nâng cao response viewer ✅
 
-**Phase 2e: Visual Polish and Branding ✅ (5/5 stories completed)**
-- Professional branding ✅
-- Onboarding and help system ✅
-- Accessibility enhancements ✅
-- Responsive design ✅
-- Help modal improvements ✅
+**Phase 2e: Visual Polish and Branding ✅ (5/5 câu chuyện hoàn thành)**
+- Branding chuyên nghiệp ✅
+- Hệ thống onboarding và help ✅
+- Nâng cao accessibility ✅
+- Thiết kế responsive ✅
+- Cải thiện help modal ✅
 
-**Key achievements:**
-- Professional three-panel layout with responsive design
-- Monaco Editor integration for complex parameter input
-- Comprehensive syntax highlighting for all response types
-- Advanced tool organization with favorites and recent usage
-- Professional branding and onboarding system
-- Full accessibility support with keyboard navigation
-- Enhanced server management with health monitoring
+**Thành tựu chính:**
+- Layout ba panel chuyên nghiệp với thiết kế responsive
+- Tích hợp Monaco Editor cho nhập parameter phức tạp
+- Syntax highlighting toàn diện cho tất cả loại response
+- Tổ chức tool nâng cao với favorites và recent usage
+- Hệ thống branding và onboarding chuyên nghiệp
+- Hỗ trợ accessibility đầy đủ với keyboard navigation
+- Quản lý server nâng cao với health monitoring
 
-### Phase 3: Enhanced Features & Content Types ⏳ (0/25 stories completed)
-**Goal**: Extend MCP protocol support and add advanced organization features
+### Phase 3: Enhanced Features & Content Types ⏳ (0/25 câu chuyện hoàn thành)
+**Mục tiêu**: Mở rộng hỗ trợ giao thức MCP và thêm các tính năng tổ chức nâng cao
 
-**Phase 3a: Enhanced Error Handling & User Feedback (0/7 stories)**
-- Basic error message enhancement
-- Error classification system  
-- Error recovery suggestions
-- Basic retry mechanisms
-- Toast notification system
-- Enhanced loading states
-- Enhanced keyboard shortcuts
+**Phase 3a: Enhanced Error Handling & User Feedback (0/7 câu chuyện)**
+- Cải thiện thông báo lỗi cơ bản
+- Hệ thống phân loại lỗi
+- Đề xuất khôi phục lỗi
+- Cơ chế retry cơ bản
+- Hệ thống thông báo toast
+- Cải thiện trạng thái loading
+- Cải thiện keyboard shortcuts
 
-**Phase 3b: MCP Prompts Support (0/5 stories)**
-- Basic prompts discovery
-- Prompts display and navigation
-- Basic prompt execution
-- Prompt parameter input
-- Prompts history integration
+**Phase 3b: MCP Prompts Support (0/5 câu chuyện)**
+- Khám phá prompts cơ bản
+- Hiển thị và điều hướng prompts
+- Thực thi prompt cơ bản
+- Nhập parameter prompt
+- Tích hợp lịch sử prompts
 
-**Phase 3c: MCP Resources Support (0/5 stories)**
-- Basic resources discovery
-- Resources display and navigation
-- Basic resource content viewing
-- Resource content formatting
-- Resources history integration
+**Phase 3c: MCP Resources Support (0/5 câu chuyện)**
+- Khám phá resources cơ bản
+- Hiển thị và điều hướng resources
+- Xem nội dung resource cơ bản
+- Định dạng nội dung resource
+- Tích hợp lịch sử resources
 
-**Phase 3d: Basic Collections and Organization (0/8 stories)**
-- Server grouping interface
-- Group-based operations
-- Request favorites system
-- Enhanced search across content
-- Basic workspace switching
-- Workspace data management
-- Basic export functionality
-- Basic import functionality
+**Phase 3d: Basic Collections and Organization (0/8 câu chuyện)**
+- Giao diện nhóm server
+- Thao tác dựa trên nhóm
+- Hệ thống yêu thích request
+- Tìm kiếm nâng cao trên nội dung
+- Chuyển đổi workspace cơ bản
+- Quản lý dữ liệu workspace
+- Chức năng export cơ bản
+- Chức năng import cơ bản
 
-**Key goals:**
-- Complete MCP protocol support (tools, prompts, resources)
-- Professional error handling and user feedback
-- Basic collections and workspace management
-- Enhanced organization and search capabilities
+**Mục tiêu chính:**
+- Hỗ trợ hoàn chỉnh giao thức MCP (tools, prompts, resources)
+- Xử lý lỗi chuyên nghiệp và phản hồi người dùng
+- Quản lý collections và workspace cơ bản
+- Cải thiện khả năng tổ chức và tìm kiếm
 
 ### Phase 4: Remote Transports
-- SSE transport implementation
-- OAuth authentication
-- WebSocket support
-- Cloud sync capabilities
+**Mục tiêu**: Thêm hỗ trợ cho MCP servers từ xa và networking nâng cao
+
+- Triển khai SSE transport
+- Xác thực OAuth
+- Hỗ trợ WebSocket
+- Khả năng đồng bộ cloud
 
 ### Phase 5: Advanced Testing & Automation
-- Batch tool execution (moved from Phase 2a)
-- Environment variable management (moved from Phase 2c)
-- Performance monitoring (moved from Phase 2c)
-- Request chaining (moved from Phase 2d)
-- Mock and test data management (moved from Phase 2d)
-- API documentation generation (moved from Phase 2d)
-- Integration testing framework (moved from Phase 2d)
-- Plugin system foundation (moved from Phase 2d)
-- Workspace management and organization
-- Automated testing
+**Mục tiêu**: Thêm khả năng testing và automation toàn diện
 
-## Future Extensibility
+- Thực thi tool hàng loạt (chuyển từ Phase 2a)
+- Quản lý biến môi trường (chuyển từ Phase 2c)
+- Giám sát hiệu suất (chuyển từ Phase 2c)
+- Chuỗi request (chuyển từ Phase 2d)
+- Quản lý mock và test data (chuyển từ Phase 2d)
+- Tạo tài liệu API (chuyển từ Phase 2d)
+- Framework testing tích hợp (chuyển từ Phase 2d)
+- Nền tảng hệ thống plugin (chuyển từ Phase 2d)
+- Quản lý và tổ chức workspace
+- Testing tự động
+
+## Khả Năng Mở Rộng Trong Tương Lai
 
 ### Transport Plugins
 ```rust
@@ -284,59 +288,59 @@ pub trait TransportAdapter {
 }
 ```
 
-### Export Formats
+### Định Dạng Export
 - Postman collections
-- OpenAPI-like specifications  
-- Custom test suites
+- Đặc tả kiểu OpenAPI
+- Test suites tùy chỉnh
 
-### Advanced Features
-- Request chaining
-- Environment variables and workspace management
-- Batch tool execution
-- Pre/post request scripts
-- Performance testing
+### Tính Năng Nâng Cao
+- Chuỗi request
+- Quản lý biến môi trường và workspace
+- Thực thi tool hàng loạt
+- Scripts pre/post request
+- Testing hiệu suất
 
-## Theme System & UI Architecture
+## Hệ Thống Theme & Kiến Trúc UI
 
-### Custom Theme Implementation
-- **System**: Custom `.light` class-based theming (not Tailwind's default `dark:` system)
-- **Provider**: React context with `useTheme()` hook provides `resolvedTheme` ('light'|'dark')
-- **CSS Variables**: Light theme overrides in `App.css` change Tailwind class colors via CSS variables
-- **Theme Toggle**: Automatic system preference detection with manual override capability
+### Triển Khai Theme Tùy Chỉnh
+- **Hệ thống**: Theme dựa trên class `.light` tùy chỉnh (không phải hệ thống `dark:` mặc định của Tailwind)
+- **Provider**: React context với hook `useTheme()` cung cấp `resolvedTheme` ('light'|'dark')
+- **CSS Variables**: Light theme overrides trong `App.css` thay đổi màu sắc class Tailwind qua CSS variables
+- **Theme Toggle**: Tự động phát hiện preference hệ thống với khả năng override thủ công
 
-### Theme-Aware Component Patterns
-Components requiring theme support should:
-1. Import `useTheme()` hook: `import { useTheme } from '../../hooks/useTheme'`
-2. Get resolved theme: `const { resolvedTheme } = useTheme()`
-3. Create conditional styling functions that return appropriate classes for each theme
-4. **Avoid `dark:` prefixes** - they don't work with the custom theme system
+### Patterns Component Nhận Biết Theme
+Các components cần hỗ trợ theme nên:
+1. Import hook `useTheme()`: `import { useTheme } from '../../hooks/useTheme'`
+2. Lấy resolved theme: `const { resolvedTheme } = useTheme()`
+3. Tạo các hàm styling có điều kiện trả về classes phù hợp cho mỗi theme
+4. **Tránh prefixes `dark:`** - chúng không hoạt động với hệ thống theme tùy chỉnh
 
-### Recent Theme Fixes (Story 3.1)
-- **ServerCard**: Fixed selection highlighting readability in light mode
-- **HelpModal**: Fixed code/kbd element readability in dark mode  
-- **Badge Component**: Removed incompatible `dark:` prefixes
-- **Error Display**: Unified theme-neutral error colors for both light/dark modes
-- **CSS Coverage**: Enhanced gray class overrides for broader theme compatibility
+### Sửa Lỗi Theme Gần Đây (Story 3.1)
+- **ServerCard**: Sửa khả năng đọc selection highlighting ở light mode
+- **HelpModal**: Sửa khả năng đọc code/kbd element ở dark mode
+- **Badge Component**: Loại bỏ prefixes `dark:` không tương thích
+- **Error Display**: Thống nhất màu lỗi theme-neutral cho cả light/dark modes
+- **CSS Coverage**: Nâng cao gray class overrides cho khả năng tương thích theme rộng hơn
 
-## Appendix: What is MCP?
+## Phụ Lục: MCP Là Gì?
 
-The Model Context Protocol (MCP) is an open protocol that standardizes how applications provide context to Large Language Models (LLMs). Think of MCP like a USB-C port for AI applications - just as USB-C provides a standardized way to connect devices to various peripherals, MCP provides a standardized way to connect AI models to different data sources and tools.
+Model Context Protocol (MCP) là một giao thức mở chuẩn hóa cách các ứng dụng cung cấp ngữ cảnh cho các Large Language Models (LLMs). Hãy nghĩ về MCP như một cổng USB-C cho các ứng dụng AI - giống như USB-C cung cấp cách chuẩn hóa để kết nối thiết bị với các thiết bị ngoại vi khác nhau, MCP cung cấp cách chuẩn hóa để kết nối các AI models với các nguồn dữ liệu và công cụ khác nhau.
 
-### Key MCP Concepts:
+### Các Khái Niệm MCP Chính:
 
-**MCP Servers** are lightweight programs that expose specific capabilities (tools, prompts, and resources) through the protocol. For example, a Git MCP server might expose tools like `git_status`, `git_commit`, and `git_diff` that an LLM can call.
+**MCP Servers** là các chương trình nhẹ expose các khả năng cụ thể (tools, prompts và resources) thông qua giao thức. Ví dụ, một Git MCP server có thể expose các tools như `git_status`, `git_commit` và `git_diff` mà một LLM có thể gọi.
 
-**MCP Clients** are applications (like Claude Desktop or IDEs) that connect to MCP servers to access their capabilities. They maintain 1:1 connections with servers.
+**MCP Clients** là các ứng dụng (như Claude Desktop hoặc IDEs) kết nối với MCP servers để truy cập khả năng của chúng. Chúng duy trì kết nối 1:1 với servers.
 
-**Core Primitives:**
-- **Resources**: Data and content that servers expose (files, documents, live data)
-- **Tools**: Functions that LLMs can execute through the server (API calls, system commands, calculations)
-- **Prompts**: Reusable prompt templates and workflows
-- **Sampling**: Allows servers to request LLM completions
+**Primitives Cốt Lõi:**
+- **Resources**: Dữ liệu và nội dung mà servers expose (files, documents, live data)
+- **Tools**: Các hàm mà LLMs có thể thực thi thông qua server (API calls, system commands, calculations)
+- **Prompts**: Templates prompt có thể tái sử dụng và workflows
+- **Sampling**: Cho phép servers yêu cầu LLM completions
 
-**Transport Layers**: MCP supports multiple transport mechanisms:
-- **stdio**: Communication through standard input/output (for local processes)
-- **SSE (Server-Sent Events)**: For HTTP-based connections
-- **WebSocket**: For bidirectional streaming (planned)
+**Các Lớp Transport**: MCP hỗ trợ nhiều cơ chế transport:
+- **stdio**: Giao tiếp thông qua standard input/output (cho local processes)
+- **SSE (Server-Sent Events)**: Cho các kết nối dựa trên HTTP
+- **WebSocket**: Cho streaming hai chiều (đã lên kế hoạch)
 
-The protocol enables LLMs to interact with external systems in a controlled, secure way while maintaining clear boundaries between the AI model and the tools/data it accesses. This standardization means developers can write MCP servers once and have them work with any MCP-compatible client, similar to how REST APIs work with any HTTP client.
+Giao thức cho phép LLMs tương tác với các hệ thống bên ngoài theo cách được kiểm soát, an toàn trong khi duy trì ranh giới rõ ràng giữa AI model và các tools/data mà nó truy cập. Việc chuẩn hóa này có nghĩa là các nhà phát triển có thể viết MCP servers một lần và có chúng hoạt động với bất kỳ MCP-compatible client nào, tương tự như cách REST APIs hoạt động với bất kỳ HTTP client nào.

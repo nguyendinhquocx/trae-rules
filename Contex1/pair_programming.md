@@ -1,192 +1,192 @@
-# Story-Driven Development Framework
+# Framework Phát Triển Dựa Trên Câu Chuyện
 
-This document outlines our structured approach to building software through story-driven development with AI assistance.
+Tài liệu này phác thảo phương pháp có cấu trúc của chúng ta để xây dựng phần mềm thông qua phát triển dựa trên câu chuyện với sự hỗ trợ của AI.
 
-## Core Philosophy
+## Triết Lý Cốt Lõi
 
-**Story-Driven Development** breaks down complex software projects into manageable, testable stories that can be completed in 1-3 hours. Each story represents a specific feature or improvement with clear acceptance criteria and validation requirements.
+**Phát Triển Dựa Trên Câu Chuyện** chia nhỏ các dự án phần mềm phức tạp thành những câu chuyện có thể quản lý, có thể kiểm thử được hoàn thành trong 1-3 giờ. Mỗi câu chuyện đại diện cho một tính năng hoặc cải tiến cụ thể với tiêu chí chấp nhận rõ ràng và yêu cầu xác thực.
 
-## 7-Step Story Workflow
+## Quy Trình 7 Bước Cho Câu Chuyện
 
-Every story follows this exact process:
+Mọi câu chuyện đều tuân theo quy trình chính xác này:
 
-### 1. Story Selection & Planning
-- **Input**: Review `project_plan.md` for next priority story
-- **Action**: Understand requirements, acceptance criteria, and technical approach
-- **Output**: Clear understanding of what needs to be built
-- **Validation**: Story has clear, testable acceptance criteria
+### 1. Lựa Chọn & Lập Kế Hoạch Câu Chuyện
+- **Đầu vào**: Xem xét `project_plan.md` cho câu chuyện ưu tiên tiếp theo
+- **Hành động**: Hiểu yêu cầu, tiêu chí chấp nhận và phương pháp kỹ thuật
+- **Đầu ra**: Hiểu rõ những gì cần được xây dựng
+- **Xác thực**: Câu chuyện có tiêu chí chấp nhận rõ ràng, có thể kiểm thử
 
-### 2. Implementation Preparation
-- **Input**: Story requirements and current codebase state
-- **Action**: 
-  - Read relevant files from `CLAUDE.md` quick start list
-  - Review `technical_considerations.md` for lessons learned
-  - Understand existing patterns and architecture
-- **Output**: Implementation plan with specific technical approach
-- **Validation**: Plan addresses all acceptance criteria
+### 2. Chuẩn Bị Triển Khai
+- **Đầu vào**: Yêu cầu câu chuyện và trạng thái codebase hiện tại
+- **Hành động**: 
+  - Đọc các file liên quan từ danh sách bắt đầu nhanh `CLAUDE.md`
+  - Xem xét `technical_considerations.md` cho bài học kinh nghiệm
+  - Hiểu các patterns và kiến trúc hiện có
+- **Đầu ra**: Kế hoạch triển khai với phương pháp kỹ thuật cụ thể
+- **Xác thực**: Kế hoạch giải quyết tất cả tiêu chí chấp nhận
 
-### 3. Implementation
-- **Input**: Implementation plan and codebase
-- **Action**: Write code following established patterns and standards
-- **Output**: Working implementation of the story
-- **Validation**: Code compiles and follows project standards
+### 3. Triển Khai
+- **Đầu vào**: Kế hoạch triển khai và codebase
+- **Hành động**: Viết code theo các patterns và tiêu chuẩn đã thiết lập
+- **Đầu ra**: Triển khai hoạt động của câu chuyện
+- **Xác thực**: Code biên dịch và tuân theo tiêu chuẩn dự án
 
-### 4. Testing & Verification
-- **Input**: Implemented code
-- **Action**: 
-  - Run automated tests (if applicable)
-  - Verify functionality meets acceptance criteria
-  - Check for regressions
-- **Output**: Verified working implementation
-- **Validation**: All acceptance criteria met
+### 4. Kiểm Thử & Xác Minh
+- **Đầu vào**: Code đã triển khai
+- **Hành động**: 
+  - Chạy automated tests (nếu có)
+  - Xác minh chức năng đáp ứng tiêu chí chấp nhận
+  - Kiểm tra regressions
+- **Đầu ra**: Triển khai hoạt động đã được xác minh
+- **Xác thực**: Tất cả tiêu chí chấp nhận được đáp ứng
 
-### 5. Human Verification Request
-- **Input**: Completed implementation
-- **Action**: Request human verification using exact format below
-- **Output**: Clear verification request
-- **Validation**: Request includes all required information
+### 5. Yêu Cầu Xác Minh Từ Con Người
+- **Đầu vào**: Triển khai đã hoàn thành
+- **Hành động**: Yêu cầu xác minh từ con người sử dụng định dạng chính xác bên dưới
+- **Đầu ra**: Yêu cầu xác minh rõ ràng
+- **Xác thực**: Yêu cầu bao gồm tất cả thông tin cần thiết
 
-### 6. Human Feedback Integration
-- **Input**: Human feedback and verification results
-- **Action**: Address any issues or requested changes
-- **Output**: Refined implementation
-- **Validation**: All human feedback addressed
+### 6. Tích Hợp Phản Hồi Từ Con Người
+- **Đầu vào**: Phản hồi từ con người và kết quả xác minh
+- **Hành động**: Giải quyết bất kỳ vấn đề hoặc thay đổi được yêu cầu
+- **Đầu ra**: Triển khai được tinh chỉnh
+- **Xác thực**: Tất cả phản hồi từ con người được giải quyết
 
-### 7. Story Completion
-- **Input**: Verified and approved implementation
-- **Action**: 
-  - Update `project_plan.md` with completion status
-  - Update `technical_considerations.md` with lessons learned
-  - Prepare for next story
-- **Output**: Completed story and updated documentation
-- **Validation**: Documentation updated, ready for next story
+### 7. Hoàn Thành Câu Chuyện
+- **Đầu vào**: Triển khai đã được xác minh và phê duyệt
+- **Hành động**: 
+  - Cập nhật `project_plan.md` với trạng thái hoàn thành
+  - Cập nhật `technical_considerations.md` với bài học kinh nghiệm
+  - Chuẩn bị cho câu chuyện tiếp theo
+- **Đầu ra**: Câu chuyện hoàn thành và tài liệu được cập nhật
+- **Xác thực**: Tài liệu được cập nhật, sẵn sàng cho câu chuyện tiếp theo
 
-## Human Verification Format
+## Định Dạng Xác Minh Từ Con Người
 
-**Use this exact format for every verification request:**
+**Sử dụng định dạng chính xác này cho mọi yêu cầu xác minh:**
 
 ```
-## Story Verification Request
+## Yêu Cầu Xác Minh Câu Chuyện
 
-**Story**: [STORY_TITLE]
+**Câu Chuyện**: [TÊN_CÂU_CHUYỆN]
 
-**Implementation Summary**:
-- [Key change 1]
-- [Key change 2]
-- [Key change 3]
+**Tóm Tắt Triển Khai**:
+- [Thay đổi chính 1]
+- [Thay đổi chính 2]
+- [Thay đổi chính 3]
 
-**Files Modified**:
-- `[file1]` - [description of changes]
-- `[file2]` - [description of changes]
+**Files Đã Sửa Đổi**:
+- `[file1]` - [mô tả thay đổi]
+- `[file2]` - [mô tả thay đổi]
 
-**Testing Performed**:
-- [Test 1]: [Result]
-- [Test 2]: [Result]
-- [Test 3]: [Result]
+**Kiểm Thử Đã Thực Hiện**:
+- [Test 1]: [Kết quả]
+- [Test 2]: [Kết quả]
+- [Test 3]: [Kết quả]
 
-**Acceptance Criteria Verification**:
-- ✅ [Criteria 1]: [How verified]
-- ✅ [Criteria 2]: [How verified]
-- ✅ [Criteria 3]: [How verified]
+**Xác Minh Tiêu Chí Chấp Nhận**:
+- ✅ [Tiêu chí 1]: [Cách xác minh]
+- ✅ [Tiêu chí 2]: [Cách xác minh]
+- ✅ [Tiêu chí 3]: [Cách xác minh]
 
-**Ready for human verification**
+**Sẵn sàng cho xác minh từ con người**
 ```
 
-## Documentation Updates
+## Cập Nhật Tài Liệu
 
-After each story completion, update these files:
+Sau khi hoàn thành mỗi câu chuyện, cập nhật các file này:
 
 ### `CLAUDE.md`
-- Add new patterns or architectural decisions
-- Update known issues and solutions
-- Refine development guidelines
+- Thêm patterns mới hoặc quyết định kiến trúc
+- Cập nhật các vấn đề đã biết và giải pháp
+- Tinh chỉnh hướng dẫn phát triển
 
 ### `technical_considerations.md`
-- Document lessons learned
-- Record implementation decisions and rationale
-- Note any technical debt or future improvements
+- Ghi lại bài học kinh nghiệm
+- Ghi lại quyết định triển khai và lý do
+- Ghi chú bất kỳ technical debt hoặc cải tiến trong tương lai
 
 ### `project_plan.md`
-- Mark completed stories
-- Update progress tracking
-- Adjust priorities if needed
+- Đánh dấu câu chuyện đã hoàn thành
+- Cập nhật theo dõi tiến độ
+- Điều chỉnh ưu tiên nếu cần
 
-## Quality Standards
+## Tiêu Chuẩn Chất Lượng
 
-### Code Quality
-- Follow established coding standards
-- Use consistent naming conventions
-- Implement proper error handling
-- Write clear, maintainable code
+### Chất Lượng Code
+- Tuân theo tiêu chuẩn coding đã thiết lập
+- Sử dụng quy ước đặt tên nhất quán
+- Triển khai xử lý lỗi đúng cách
+- Viết code rõ ràng, dễ bảo trì
 
-### Testing Requirements
-- Verify all acceptance criteria
-- Test edge cases and error conditions
-- Ensure no regressions in existing functionality
-- Document any manual testing steps
+### Yêu Cầu Kiểm Thử
+- Xác minh tất cả tiêu chí chấp nhận
+- Kiểm thử edge cases và điều kiện lỗi
+- Đảm bảo không có regressions trong chức năng hiện có
+- Ghi lại bất kỳ bước kiểm thử thủ công nào
 
-### Documentation Standards
-- Update relevant documentation
-- Include clear commit messages
-- Document any breaking changes
-- Maintain architectural decision records
+### Tiêu Chuẩn Tài Liệu
+- Cập nhật tài liệu liên quan
+- Bao gồm commit messages rõ ràng
+- Ghi lại bất kỳ breaking changes nào
+- Duy trì architectural decision records
 
-## Communication Patterns
+## Mẫu Giao Tiếp
 
-### Progress Updates
-- Provide clear status updates at each step
-- Highlight any blockers or challenges
-- Request clarification when requirements are unclear
+### Cập Nhật Tiến Độ
+- Cung cấp cập nhật trạng thái rõ ràng ở mỗi bước
+- Nổi bật bất kỳ blockers hoặc thách thức nào
+- Yêu cầu làm rõ khi yêu cầu không rõ ràng
 
-### Problem Escalation
-- Escalate technical blockers immediately
-- Provide context and attempted solutions
-- Suggest alternative approaches when possible
+### Leo Thang Vấn Đề
+- Leo thang technical blockers ngay lập tức
+- Cung cấp ngữ cảnh và các giải pháp đã thử
+- Đề xuất phương pháp thay thế khi có thể
 
-### Knowledge Sharing
-- Document reusable patterns and solutions
-- Share insights about technology choices
-- Explain complex implementation decisions
+### Chia Sẻ Kiến Thức
+- Ghi lại patterns và giải pháp có thể tái sử dụng
+- Chia sẻ insights về lựa chọn công nghệ
+- Giải thích quyết định triển khai phức tạp
 
-## Emergency Procedures
+## Quy Trình Khẩn Cấp
 
-### Build Failures
-1. Identify the specific error
-2. Check recent changes for obvious issues
-3. Consult `technical_considerations.md` for known solutions
-4. If unresolved, escalate with full error context
+### Lỗi Build
+1. Xác định lỗi cụ thể
+2. Kiểm tra các thay đổi gần đây để tìm vấn đề rõ ràng
+3. Tham khảo `technical_considerations.md` cho các giải pháp đã biết
+4. Nếu chưa giải quyết được, leo thang với đầy đủ ngữ cảnh lỗi
 
-### Requirement Ambiguity
-1. Document the specific ambiguity
-2. Propose reasonable interpretations
-3. Request clarification before proceeding
-4. Update story acceptance criteria once clarified
+### Mơ Hồ Yêu Cầu
+1. Ghi lại sự mơ hồ cụ thể
+2. Đề xuất các cách hiểu hợp lý
+3. Yêu cầu làm rõ trước khi tiếp tục
+4. Cập nhật tiêu chí chấp nhận câu chuyện sau khi được làm rõ
 
-### Technical Debt
-1. Document the debt in `technical_considerations.md`
-2. Assess impact on current story
-3. Propose resolution timeline
-4. Continue with story if debt doesn't block progress
+### Nợ Kỹ Thuật
+1. Ghi lại debt trong `technical_considerations.md`
+2. Đánh giá tác động đến câu chuyện hiện tại
+3. Đề xuất timeline giải quyết
+4. Tiếp tục với câu chuyện nếu debt không cản trở tiến độ
 
-## Success Metrics
+## Chỉ Số Thành Công
 
-### Story Completion
-- ✅ All acceptance criteria met
-- ✅ Code quality standards maintained
-- ✅ Documentation updated
-- ✅ Human verification passed
+### Hoàn Thành Câu Chuyện
+- ✅ Tất cả tiêu chí chấp nhận được đáp ứng
+- ✅ Tiêu chuẩn chất lượng code được duy trì
+- ✅ Tài liệu được cập nhật
+- ✅ Xác minh từ con người được thông qua
 
-### Process Efficiency
-- Stories completed within 1-3 hour timeframe
-- Minimal back-and-forth on requirements
-- Consistent quality across stories
-- Effective knowledge capture and reuse
+### Hiệu Quả Quy Trình
+- Câu chuyện hoàn thành trong khung thời gian 1-3 giờ
+- Tối thiểu trao đổi qua lại về yêu cầu
+- Chất lượng nhất quán qua các câu chuyện
+- Thu thập và tái sử dụng kiến thức hiệu quả
 
-### Knowledge Building
-- `technical_considerations.md` grows with each story
-- Patterns become reusable across stories
-- Development velocity increases over time
-- Fewer repeated mistakes or issues
+### Xây Dựng Kiến Thức
+- `technical_considerations.md` phát triển với mỗi câu chuyện
+- Patterns trở nên có thể tái sử dụng qua các câu chuyện
+- Tốc độ phát triển tăng theo thời gian
+- Ít lặp lại sai lầm hoặc vấn đề hơn
 
 ---
 

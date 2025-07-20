@@ -1,254 +1,254 @@
-# Story-Driven Development Framework
+# Framework Phát Triển Dựa Trên Câu Chuyện
 
-A comprehensive framework for building any application with just one prompt using story-driven development methodology. This framework combines structured development processes with AI-assisted implementation to deliver high-quality software efficiently.
+Một framework toàn diện để xây dựng bất kỳ ứng dụng nào chỉ với một prompt sử dụng phương pháp phát triển dựa trên câu chuyện. Framework này kết hợp quy trình phát triển có cấu trúc với việc triển khai hỗ trợ bởi AI để cung cấp phần mềm chất lượng cao một cách hiệu quả.
 
-## Overview
+## Tổng Quan
 
-This framework enables you to:
-- Build complete applications from a single comprehensive prompt
-- Follow a proven 7-step story-driven development process
-- Maintain high code quality through structured validation
-- Document and track progress systematically
-- Scale from MVP to full-featured applications
+Framework này cho phép bạn:
+- Xây dựng ứng dụng hoàn chỉnh từ một prompt toàn diện duy nhất
+- Tuân theo quy trình phát triển dựa trên câu chuyện 7 bước đã được chứng minh
+- Duy trì chất lượng code cao thông qua xác thực có cấu trúc
+- Tài liệu hóa và theo dõi tiến độ một cách có hệ thống
+- Mở rộng từ MVP đến ứng dụng đầy đủ tính năng
 
-## Framework Structure
+## Cấu Trúc Framework
 
 ```
 Contex1/
-├── README.md                 # This file - framework overview and usage
-├── CLAUDE.md                 # AI assistant instructions and context
-├── pair_programming.md       # Development process and quality standards
-├── project_plan.md          # Project planning and story management template
-├── architecture.md          # Technical architecture template
-├── technical_considerations.md # Technical decisions and lessons learned
-└── PROJECT_CONTEXT.md       # Business context and requirements template
+├── README.md                 # Tệp này - tổng quan framework và cách sử dụng
+├── CLAUDE.md                 # Hướng dẫn và ngữ cảnh cho AI assistant
+├── pair_programming.md       # Quy trình phát triển và tiêu chuẩn chất lượng
+├── project_plan.md          # Template lập kế hoạch dự án và quản lý câu chuyện
+├── architecture.md          # Template kiến trúc kỹ thuật
+├── technical_considerations.md # Quyết định kỹ thuật và bài học kinh nghiệm
+└── PROJECT_CONTEXT.md       # Template ngữ cảnh kinh doanh và yêu cầu
 ```
 
-## Quick Start
+## Bắt Đầu Nhanh
 
-### 1. Project Initialization
+### 1. Khởi Tạo Dự Án
 
-1. **Copy this framework** to your project directory
-2. **Fill out PROJECT_CONTEXT.md** with your specific:
-   - Business requirements
-   - Domain knowledge
-   - User personas
-   - Technical constraints
-   - Success criteria
+1. **Sao chép framework này** vào thư mục dự án của bạn
+2. **Điền vào PROJECT_CONTEXT.md** với thông tin cụ thể của bạn:
+   - Yêu cầu kinh doanh
+   - Kiến thức lĩnh vực
+   - Personas người dùng
+   - Ràng buộc kỹ thuật
+   - Tiêu chí thành công
 
-3. **Update project_plan.md** with:
-   - Project overview
-   - Initial story breakdown
-   - Success metrics
+3. **Cập nhật project_plan.md** với:
+   - Tổng quan dự án
+   - Phân tích câu chuyện ban đầu
+   - Metrics thành công
 
-4. **Define architecture.md** with:
-   - Technology stack
-   - System architecture
-   - Integration points
+4. **Định nghĩa architecture.md** với:
+   - Ngăn xếp công nghệ
+   - Kiến trúc hệ thống
+   - Điểm tích hợp
 
-### 2. AI Assistant Setup
+### 2. Thiết Lập AI Assistant
 
-1. **Provide the AI assistant** with all framework files as context
-2. **Share your main prompt** describing what you want to build
-3. **Let the AI** break down your prompt into manageable stories
-4. **Follow the 7-step process** for each story
+1. **Cung cấp cho AI assistant** tất cả các tệp framework làm ngữ cảnh
+2. **Chia sẻ prompt chính** mô tả những gì bạn muốn xây dựng
+3. **Để AI** phân tích prompt thành các câu chuyện có thể quản lý
+4. **Tuân theo quy trình 7 bước** cho mỗi câu chuyện
 
-### 3. Development Process
+### 3. Quy Trình Phát Triển
 
-For each story, follow this 7-step process:
+Đối với mỗi câu chuyện, tuân theo quy trình 7 bước này:
 
-1. **Story Analysis** - Break down requirements and acceptance criteria
-2. **Technical Design** - Plan implementation approach and architecture
-3. **Implementation** - Write code following best practices
-4. **Testing** - Verify functionality and edge cases
-5. **Integration** - Ensure compatibility with existing code
-6. **Documentation** - Update relevant documentation
-7. **Validation** - Confirm story completion and quality
+1. **Phân Tích Câu Chuyện** - Phân tích yêu cầu và tiêu chí chấp nhận
+2. **Thiết Kế Kỹ Thuật** - Lập kế hoạch cách tiếp cận triển khai và kiến trúc
+3. **Triển Khai** - Viết code tuân theo best practices
+4. **Kiểm Thử** - Xác minh chức năng và các trường hợp biên
+5. **Tích Hợp** - Đảm bảo tương thích với code hiện có
+6. **Tài Liệu** - Cập nhật tài liệu liên quan
+7. **Xác Thực** - Xác nhận hoàn thành câu chuyện và chất lượng
 
-## Core Principles
+## Nguyên Tắc Cốt Lõi
 
-### Story-Driven Development
-- **Stories as Units**: Each feature is a complete, testable story
-- **Incremental Progress**: Build functionality piece by piece
-- **User-Centric**: Focus on user value and experience
-- **Validation Gates**: Verify each story before proceeding
+### Phát Triển Dựa Trên Câu Chuyện
+- **Câu Chuyện Là Đơn Vị**: Mỗi tính năng là một câu chuyện hoàn chỉnh, có thể kiểm thử
+- **Tiến Độ Tăng Dần**: Xây dựng chức năng từng phần một
+- **Tập Trung Người Dùng**: Tập trung vào giá trị và trải nghiệm người dùng
+- **Cổng Xác Thực**: Xác minh mỗi câu chuyện trước khi tiếp tục
 
-### Quality Standards
-- **Code Quality**: Clean, maintainable, well-documented code
-- **Testing**: Comprehensive testing at each step
-- **Documentation**: Keep documentation current and useful
-- **Performance**: Consider performance implications early
+### Tiêu Chuẩn Chất Lượng
+- **Chất Lượng Code**: Code sạch, dễ bảo trì, được tài liệu hóa tốt
+- **Kiểm Thử**: Kiểm thử toàn diện ở mỗi bước
+- **Tài Liệu**: Giữ tài liệu cập nhật và hữu ích
+- **Hiệu Suất**: Xem xét tác động hiệu suất từ sớm
 
-### AI Collaboration
-- **Context Awareness**: AI understands business and technical context
-- **Structured Process**: Follow proven development methodology
-- **Quality Assurance**: Built-in validation and review processes
-- **Continuous Learning**: Capture lessons learned for future stories
+### Hợp Tác AI
+- **Nhận Thức Ngữ Cảnh**: AI hiểu ngữ cảnh kinh doanh và kỹ thuật
+- **Quy Trình Có Cấu Trúc**: Tuân theo phương pháp phát triển đã được chứng minh
+- **Đảm Bảo Chất Lượng**: Quy trình xác thực và đánh giá tích hợp sẵn
+- **Học Tập Liên Tục**: Ghi lại bài học kinh nghiệm cho các câu chuyện tương lai
 
-## Framework Components
+## Các Thành Phần Framework
 
 ### CLAUDE.md
-**Purpose**: Provides AI assistant with comprehensive context and instructions
-**Contains**:
-- Project context and business understanding
-- Technical architecture and constraints
-- Development process and quality standards
-- Communication guidelines and expectations
+**Mục đích**: Cung cấp cho AI assistant ngữ cảnh và hướng dẫn toàn diện
+**Chứa**:
+- Ngữ cảnh dự án và hiểu biết kinh doanh
+- Kiến trúc kỹ thuật và ràng buộc
+- Quy trình phát triển và tiêu chuẩn chất lượng
+- Hướng dẫn giao tiếp và kỳ vọng
 
 ### pair_programming.md
-**Purpose**: Defines the collaborative development process
-**Contains**:
-- 7-step story development process
-- Quality standards and validation criteria
-- Communication protocols
-- Emergency procedures and escalation
+**Mục đích**: Định nghĩa quy trình phát triển hợp tác
+**Chứa**:
+- Quy trình phát triển câu chuyện 7 bước
+- Tiêu chuẩn chất lượng và tiêu chí xác thực
+- Giao thức giao tiếp
+- Quy trình khẩn cấp và leo thang
 
 ### PROJECT_CONTEXT.md
-**Purpose**: Captures business requirements and domain knowledge
-**Contains**:
-- Business context and problem statement
-- User personas and workflows
-- Functional and non-functional requirements
-- Technical constraints and dependencies
+**Mục đích**: Ghi lại yêu cầu kinh doanh và kiến thức lĩnh vực
+**Chứa**:
+- Ngữ cảnh kinh doanh và phát biểu vấn đề
+- Personas người dùng và quy trình làm việc
+- Yêu cầu chức năng và phi chức năng
+- Ràng buộc kỹ thuật và phụ thuộc
 
 ### project_plan.md
-**Purpose**: Manages project planning and story tracking
-**Contains**:
-- Project overview and phases
-- Story templates and tracking
-- Progress metrics and velocity
-- Success criteria and milestones
+**Mục đích**: Quản lý lập kế hoạch dự án và theo dõi câu chuyện
+**Chứa**:
+- Tổng quan dự án và các giai đoạn
+- Template câu chuyện và theo dõi
+- Metrics tiến độ và vận tốc
+- Tiêu chí thành công và cột mốc
 
 ### architecture.md
-**Purpose**: Documents technical architecture and decisions
-**Contains**:
-- System architecture overview
-- Technology stack and rationale
-- Integration points and data flow
-- Security and performance considerations
+**Mục đích**: Tài liệu hóa kiến trúc kỹ thuật và quyết định
+**Chứa**:
+- Tổng quan kiến trúc hệ thống
+- Ngăn xếp công nghệ và lý do
+- Điểm tích hợp và luồng dữ liệu
+- Cân nhắc bảo mật và hiệu suất
 
 ### technical_considerations.md
-**Purpose**: Captures technical decisions and lessons learned
-**Contains**:
-- Implementation decisions and rationale
-- Technical challenges and solutions
-- Performance optimizations
-- Future improvements and technical debt
+**Mục đích**: Ghi lại quyết định kỹ thuật và bài học kinh nghiệm
+**Chứa**:
+- Quyết định triển khai và lý do
+- Thách thức kỹ thuật và giải pháp
+- Tối ưu hóa hiệu suất
+- Cải tiến tương lai và nợ kỹ thuật
 
-## Usage Patterns
+## Mẫu Sử Dụng
 
-### For New Projects
-1. Start with PROJECT_CONTEXT.md to define requirements
-2. Use project_plan.md to break down into stories
-3. Define architecture.md for technical foundation
-4. Begin story-by-story development
+### Cho Dự Án Mới
+1. Bắt đầu với PROJECT_CONTEXT.md để định nghĩa yêu cầu
+2. Sử dụng project_plan.md để phân tích thành câu chuyện
+3. Định nghĩa architecture.md cho nền tảng kỹ thuật
+4. Bắt đầu phát triển từng câu chuyện một
 
-### For Existing Projects
-1. Analyze current state and document in architecture.md
-2. Define remaining features as stories in project_plan.md
-3. Update PROJECT_CONTEXT.md with current understanding
-4. Continue with story-driven development
+### Cho Dự Án Hiện Có
+1. Phân tích trạng thái hiện tại và tài liệu hóa trong architecture.md
+2. Định nghĩa các tính năng còn lại như câu chuyện trong project_plan.md
+3. Cập nhật PROJECT_CONTEXT.md với hiểu biết hiện tại
+4. Tiếp tục với phát triển dựa trên câu chuyện
 
-### For Feature Additions
-1. Define new features as stories in project_plan.md
-2. Update architecture.md if needed
-3. Follow 7-step process for each story
-4. Update documentation as you go
+### Cho Việc Thêm Tính Năng
+1. Định nghĩa tính năng mới như câu chuyện trong project_plan.md
+2. Cập nhật architecture.md nếu cần
+3. Tuân theo quy trình 7 bước cho mỗi câu chuyện
+4. Cập nhật tài liệu khi bạn tiến hành
 
-## Best Practices
+## Phương Pháp Hay Nhất
 
-### Story Definition
-- **Clear Acceptance Criteria**: Define what "done" means
-- **User Value**: Each story should deliver user value
-- **Testable**: Stories should be verifiable
-- **Independent**: Minimize dependencies between stories
+### Định Nghĩa Câu Chuyện
+- **Tiêu Chí Chấp Nhận Rõ Ràng**: Định nghĩa ý nghĩa của "hoàn thành"
+- **Giá Trị Người Dùng**: Mỗi câu chuyện nên mang lại giá trị cho người dùng
+- **Có Thể Kiểm Thử**: Câu chuyện nên có thể xác minh được
+- **Độc Lập**: Giảm thiểu phụ thuộc giữa các câu chuyện
 
-### Development Process
-- **Follow the 7 Steps**: Don't skip validation steps
-- **Document Decisions**: Capture rationale for future reference
-- **Test Early**: Validate functionality as you build
-- **Iterate**: Refine based on feedback and learning
+### Quy Trình Phát Triển
+- **Tuân Theo 7 Bước**: Không bỏ qua các bước xác thực
+- **Tài Liệu Hóa Quyết Định**: Ghi lại lý do để tham khảo trong tương lai
+- **Kiểm Thử Sớm**: Xác thực chức năng khi bạn xây dựng
+- **Lặp Lại**: Tinh chỉnh dựa trên phản hồi và học hỏi
 
-### Quality Assurance
-- **Code Reviews**: Review code for quality and standards
-- **Testing**: Unit, integration, and user acceptance testing
-- **Documentation**: Keep documentation current and useful
-- **Performance**: Monitor and optimize performance
+### Đảm Bảo Chất Lượng
+- **Đánh Giá Code**: Xem xét code về chất lượng và tiêu chuẩn
+- **Kiểm Thử**: Kiểm thử đơn vị, tích hợp và chấp nhận người dùng
+- **Tài Liệu**: Giữ tài liệu cập nhật và hữu ích
+- **Hiệu Suất**: Giám sát và tối ưu hóa hiệu suất
 
-## Success Metrics
+## Chỉ Số Thành Công
 
-### Development Velocity
-- Stories completed per iteration
-- Time from story start to completion
-- Quality metrics (bugs, rework)
+### Vận Tốc Phát Triển
+- Số câu chuyện hoàn thành mỗi lần lặp
+- Thời gian từ khi bắt đầu đến hoàn thành câu chuyện
+- Chỉ số chất lượng (lỗi, làm lại)
 
-### Code Quality
-- Code coverage and test quality
-- Documentation completeness
-- Technical debt accumulation
+### Chất Lượng Code
+- Độ bao phủ code và chất lượng kiểm thử
+- Tính đầy đủ của tài liệu
+- Tích lũy nợ kỹ thuật
 
-### User Value
-- Feature adoption and usage
-- User satisfaction and feedback
-- Business metric improvements
+### Giá Trị Người Dùng
+- Việc áp dụng và sử dụng tính năng
+- Sự hài lòng và phản hồi của người dùng
+- Cải thiện chỉ số kinh doanh
 
-## Troubleshooting
+## Khắc Phục Sự Cố
 
-### Common Issues
+### Vấn Đề Thường Gặp
 
-**Stories Too Large**
-- Break down into smaller, more manageable pieces
-- Focus on single user workflow or feature
-- Ensure each story can be completed in reasonable time
+**Câu Chuyện Quá Lớn**
+- Chia nhỏ thành các phần nhỏ hơn, dễ quản lý hơn
+- Tập trung vào quy trình làm việc hoặc tính năng đơn lẻ của người dùng
+- Đảm bảo mỗi câu chuyện có thể hoàn thành trong thời gian hợp lý
 
-**Technical Debt Accumulation**
-- Regular refactoring stories
-- Address technical debt proactively
-- Balance feature development with maintenance
+**Tích Lũy Nợ Kỹ Thuật**
+- Câu chuyện tái cấu trúc thường xuyên
+- Giải quyết nợ kỹ thuật một cách chủ động
+- Cân bằng phát triển tính năng với bảo trì
 
-**Quality Issues**
-- Strengthen validation steps
-- Improve testing practices
-- Review and update quality standards
+**Vấn Đề Chất Lượng**
+- Tăng cường các bước xác thực
+- Cải thiện thực hành kiểm thử
+- Xem xét và cập nhật tiêu chuẩn chất lượng
 
-**Communication Breakdown**
-- Regular check-ins and status updates
-- Clear documentation and decision tracking
-- Escalation procedures for blockers
+**Gián Đoạn Giao Tiếp**
+- Kiểm tra và cập nhật trạng thái thường xuyên
+- Tài liệu và theo dõi quyết định rõ ràng
+- Quy trình leo thang cho các rào cản
 
-## Framework Evolution
+## Phát Triển Framework
 
-This framework is designed to evolve with your needs:
+Framework này được thiết kế để phát triển theo nhu cầu của bạn:
 
-### Customization
-- Adapt templates to your domain and technology
-- Add project-specific sections and requirements
-- Modify process steps based on team needs
+### Tùy Chỉnh
+- Điều chỉnh template cho lĩnh vực và công nghệ của bạn
+- Thêm các phần và yêu cầu cụ thể của dự án
+- Sửa đổi các bước quy trình dựa trên nhu cầu nhóm
 
-### Improvement
-- Capture lessons learned in technical_considerations.md
-- Update templates based on experience
-- Share improvements with the community
+### Cải Tiến
+- Ghi lại bài học kinh nghiệm trong technical_considerations.md
+- Cập nhật template dựa trên kinh nghiệm
+- Chia sẻ cải tiến với cộng đồng
 
-### Scaling
-- Use for multiple projects and teams
-- Develop organization-specific standards
-- Build libraries of reusable components
+### Mở Rộng
+- Sử dụng cho nhiều dự án và nhóm
+- Phát triển tiêu chuẩn cụ thể của tổ chức
+- Xây dựng thư viện các thành phần có thể tái sử dụng
 
-## Support and Community
+## Hỗ Trợ và Cộng Đồng
 
-### Getting Help
-- Review documentation thoroughly
-- Check technical_considerations.md for common solutions
-- Engage with AI assistant for specific guidance
+### Nhận Trợ Giúp
+- Xem xét tài liệu một cách kỹ lưỡng
+- Kiểm tra technical_considerations.md cho các giải pháp phổ biến
+- Tương tác với AI assistant để được hướng dẫn cụ thể
 
-### Contributing
-- Share improvements and customizations
-- Document lessons learned
-- Help others adopt the framework
+### Đóng Góp
+- Chia sẻ cải tiến và tùy chỉnh
+- Tài liệu hóa bài học kinh nghiệm
+- Giúp đỡ người khác áp dụng framework
 
 ---
 
-**Remember**: This framework is a tool to help you build better software faster. Adapt it to your needs, learn from each project, and continuously improve your development process.
+**Hãy nhớ**: Framework này là một công cụ để giúp bạn xây dựng phần mềm tốt hơn và nhanh hơn. Hãy điều chỉnh nó theo nhu cầu của bạn, học hỏi từ mỗi dự án, và liên tục cải thiện quy trình phát triển của bạn.
 
-**Start building your next application today with just one prompt!**
+**Bắt đầu xây dựng ứng dụng tiếp theo của bạn ngay hôm nay chỉ với một prompt!**

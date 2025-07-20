@@ -1,307 +1,313 @@
-# Project Context - [PROJECT_NAME]
+# Ngữ Cảnh Dự Án - [TÊN_DỰ_ÁN]
 
-This document provides domain-specific context, business requirements, and project-specific information that AI assistants need to understand when working on this project.
+Tài liệu này cung cấp ngữ cảnh cụ thể theo lĩnh vực, yêu cầu kinh doanh và thông tin cụ thể của dự án mà các trợ lý AI cần hiểu khi làm việc trên dự án này.
 
-## Business Context
+## Ngữ Cảnh Kinh Doanh
 
-### Problem Statement
-**Primary Problem**: [MAIN_PROBLEM_BEING_SOLVED]
-**Target Users**: [WHO_ARE_THE_USERS]
-**Current Pain Points**: 
-- [PAIN_POINT_1]
-- [PAIN_POINT_2]
-- [PAIN_POINT_3]
+### Phát Biểu Vấn Đề
+**Vấn Đề Chính**: [VẤN_ĐỀ_CHÍNH_ĐƯỢC_GIẢI_QUYẾT]
+**Người Dùng Mục Tiêu**: [AI_LÀ_NGƯỜI_DÙNG]
+**Điểm Đau Hiện Tại**: 
+- [ĐIỂM_ĐAU_1]
+- [ĐIỂM_ĐAU_2]
+- [ĐIỂM_ĐAU_3]
 
-### Solution Overview
-**Our Solution**: [HOW_PROJECT_SOLVES_THE_PROBLEM]
-**Key Value Propositions**:
-- [VALUE_PROP_1]
-- [VALUE_PROP_2]
-- [VALUE_PROP_3]
+### Tổng Quan Giải Pháp
+**Giải Pháp Của Chúng Ta**: [DỰ_ÁN_GIẢI_QUYẾT_VẤN_ĐỀ_NHƯ_THẾ_NÀO]
+**Đề Xuất Giá Trị Chính**:
+- [ĐỀ_XUẤT_GIÁ_TRỊ_1]
+- [ĐỀ_XUẤT_GIÁ_TRỊ_2]
+- [ĐỀ_XUẤT_GIÁ_TRỊ_3]
 
-**Success Metrics**:
-- [METRIC_1]: [TARGET_VALUE]
-- [METRIC_2]: [TARGET_VALUE]
-- [METRIC_3]: [TARGET_VALUE]
+**Chỉ Số Thành Công**:
+- [CHỈ_SỐ_1]: [GIÁ_TRỊ_MỤC_TIÊU]
+- [CHỈ_SỐ_2]: [GIÁ_TRỊ_MỤC_TIÊU]
+- [CHỈ_SỐ_3]: [GIÁ_TRỊ_MỤC_TIÊU]
 
-## Domain Knowledge
+## Kiến Thức Lĩnh Vực
 
-### Industry Context
-**Industry**: [INDUSTRY_SECTOR]
-**Market Size**: [MARKET_INFORMATION]
-**Key Competitors**: [COMPETITOR_ANALYSIS]
-**Industry Standards**: [RELEVANT_STANDARDS]
+### Ngữ Cảnh Ngành
+**Ngành**: [LĨNH_VỰC_NGÀNH]
+**Quy Mô Thị Trường**: [THÔNG_TIN_THỊ_TRƯỜNG]
+**Đối Thủ Chính**: [PHÂN_TÍCH_ĐỐI_THỦ]
+**Tiêu Chuẩn Ngành**: [TIÊU_CHUẨN_LIÊN_QUAN]
 
-### Domain-Specific Terminology
-- **[TERM_1]**: [DEFINITION_AND_CONTEXT]
-- **[TERM_2]**: [DEFINITION_AND_CONTEXT]
-- **[TERM_3]**: [DEFINITION_AND_CONTEXT]
-- **[TERM_4]**: [DEFINITION_AND_CONTEXT]
-- **[TERM_5]**: [DEFINITION_AND_CONTEXT]
+### Thuật Ngữ Cụ Thể Theo Lĩnh Vực
+- **[THUẬT_NGỮ_1]**: [ĐỊNH_NGHĨA_VÀ_NGỮ_CẢNH]
+- **[THUẬT_NGỮ_2]**: [ĐỊNH_NGHĨA_VÀ_NGỮ_CẢNH]
+- **[THUẬT_NGỮ_3]**: [ĐỊNH_NGHĨA_VÀ_NGỮ_CẢNH]
+- **[THUẬT_NGỮ_4]**: [ĐỊNH_NGHĨA_VÀ_NGỮ_CẢNH]
+- **[THUẬT_NGỮ_5]**: [ĐỊNH_NGHĨA_VÀ_NGỮ_CẢNH]
 
-### Business Rules
-1. **[RULE_CATEGORY_1]**:
-   - [SPECIFIC_RULE_1]
-   - [SPECIFIC_RULE_2]
-   - [SPECIFIC_RULE_3]
+### Quy Tắc Kinh Doanh
+1. **[DANH_MỤC_QUY_TẮC_1]**:
+   - [QUY_TẮC_CỤ_THỂ_1]
+   - [QUY_TẮC_CỤ_THỂ_2]
+   - [QUY_TẮC_CỤ_THỂ_3]
 
-2. **[RULE_CATEGORY_2]**:
-   - [SPECIFIC_RULE_1]
-   - [SPECIFIC_RULE_2]
-   - [SPECIFIC_RULE_3]
+2. **[DANH_MỤC_QUY_TẮC_2]**:
+   - [QUY_TẮC_CỤ_THỂ_1]
+   - [QUY_TẮC_CỤ_THỂ_2]
+   - [QUY_TẮC_CỤ_THỂ_3]
 
-3. **[RULE_CATEGORY_3]**:
-   - [SPECIFIC_RULE_1]
-   - [SPECIFIC_RULE_2]
-   - [SPECIFIC_RULE_3]
+3. **[DANH_MỤC_QUY_TẮC_3]**:
+   - [QUY_TẮC_CỤ_THỂ_1]
+   - [QUY_TẮC_CỤ_THỂ_2]
+   - [QUY_TẮC_CỤ_THỂ_3]
 
-## User Personas
+## Personas Người Dùng
 
-### Primary Persona: [PERSONA_1_NAME]
-**Role**: [USER_ROLE]
-**Experience Level**: [TECHNICAL_EXPERTISE]
-**Goals**:
-- [GOAL_1]
-- [GOAL_2]
-- [GOAL_3]
+### Persona Chính: [TÊN_PERSONA_1]
+**Vai Trò**: [VAI_TRÒ_NGƯỜI_DÙNG]
+**Mức Độ Kinh Nghiệm**: [CHUYÊN_MÔN_KỸ_THUẬT]
+**Mục Tiêu**:
+- [MỤC_TIÊU_1]
+- [MỤC_TIÊU_2]
+- [MỤC_TIÊU_3]
 
-**Pain Points**:
-- [PAIN_POINT_1]
-- [PAIN_POINT_2]
-- [PAIN_POINT_3]
+**Điểm Đau**:
+- [ĐIỂM_ĐAU_1]
+- [ĐIỂM_ĐAU_2]
+- [ĐIỂM_ĐAU_3]
 
-**Usage Patterns**:
-- [USAGE_PATTERN_1]
-- [USAGE_PATTERN_2]
-- [USAGE_PATTERN_3]
+**Mẫu Sử Dụng**:
+- [MẪU_SỬ_DỤNG_1]
+- [MẪU_SỬ_DỤNG_2]
+- [MẪU_SỬ_DỤNG_3]
 
-### Secondary Persona: [PERSONA_2_NAME]
-**Role**: [USER_ROLE]
-**Experience Level**: [TECHNICAL_EXPERTISE]
-**Goals**:
-- [GOAL_1]
-- [GOAL_2]
-- [GOAL_3]
+### Persona Phụ: [TÊN_PERSONA_2]
+**Vai Trò**: [VAI_TRÒ_NGƯỜI_DÙNG]
+**Mức Độ Kinh Nghiệm**: [CHUYÊN_MÔN_KỸ_THUẬT]
+**Mục Tiêu**:
+- [MỤC_TIÊU_1]
+- [MỤC_TIÊU_2]
+- [MỤC_TIÊU_3]
 
-**Pain Points**:
-- [PAIN_POINT_1]
-- [PAIN_POINT_2]
-- [PAIN_POINT_3]
+**Điểm Đau**:
+- [ĐIỂM_ĐAU_1]
+- [ĐIỂM_ĐAU_2]
+- [ĐIỂM_ĐAU_3]
 
-**Usage Patterns**:
-- [USAGE_PATTERN_1]
-- [USAGE_PATTERN_2]
-- [USAGE_PATTERN_3]
+**Mẫu Sử Dụng**:
+- [MẪU_SỬ_DỤNG_1]
+- [MẪU_SỬ_DỤNG_2]
+- [MẪU_SỬ_DỤNG_3]
 
-## Functional Requirements
+## Yêu Cầu Chức Năng
 
-### Core Features
-1. **[FEATURE_1_NAME]**
-   - **Description**: [WHAT_IT_DOES]
-   - **User Story**: As a [USER_TYPE], I want [FUNCTIONALITY] so that [BENEFIT]
-   - **Acceptance Criteria**: [SPECIFIC_REQUIREMENTS]
-   - **Priority**: [HIGH/MEDIUM/LOW]
+### Tính Năng Cốt Lõi
+1. **[TÊN_TÍNH_NĂNG_1]**
+   - **Mô Tả**: [CHỨC_NĂNG_LÀM_GÌ]
+   - **User Story**: Với tư cách là [LOẠI_NGƯỜI_DÙNG], tôi muốn [CHỨC_NĂNG] để [LỢI_ÍCH]
+   - **Tiêu Chí Chấp Nhận**: [YÊU_CẦU_CỤ_THỂ]
+   - **Ưu Tiên**: [CAO/TRUNG_BÌNH/THẤP]
 
-2. **[FEATURE_2_NAME]**
-   - **Description**: [WHAT_IT_DOES]
-   - **User Story**: As a [USER_TYPE], I want [FUNCTIONALITY] so that [BENEFIT]
-   - **Acceptance Criteria**: [SPECIFIC_REQUIREMENTS]
-   - **Priority**: [HIGH/MEDIUM/LOW]
+2. **[TÊN_TÍNH_NĂNG_2]**
+   - **Mô Tả**: [CHỨC_NĂNG_LÀM_GÌ]
+   - **User Story**: Với tư cách là [LOẠI_NGƯỜI_DÙNG], tôi muốn [CHỨC_NĂNG] để [LỢI_ÍCH]
+   - **Tiêu Chí Chấp Nhận**: [YÊU_CẦU_CỤ_THỂ]
+   - **Ưu Tiên**: [CAO/TRUNG_BÌNH/THẤP]
 
-3. **[FEATURE_3_NAME]**
-   - **Description**: [WHAT_IT_DOES]
-   - **User Story**: As a [USER_TYPE], I want [FUNCTIONALITY] so that [BENEFIT]
-   - **Acceptance Criteria**: [SPECIFIC_REQUIREMENTS]
-   - **Priority**: [HIGH/MEDIUM/LOW]
+3. **[TÊN_TÍNH_NĂNG_3]**
+   - **Mô Tả**: [CHỨC_NĂNG_LÀM_GÌ]
+   - **User Story**: Với tư cách là [LOẠI_NGƯỜI_DÙNG], tôi muốn [CHỨC_NĂNG] để [LỢI_ÍCH]
+   - **Tiêu Chí Chấp Nhận**: [YÊU_CẦU_CỤ_THỂ]
+   - **Ưu Tiên**: [CAO/TRUNG_BÌNH/THẤP]
 
-### Supporting Features
-- **[SUPPORTING_FEATURE_1]**: [DESCRIPTION]
-- **[SUPPORTING_FEATURE_2]**: [DESCRIPTION]
-- **[SUPPORTING_FEATURE_3]**: [DESCRIPTION]
+### Tính Năng Hỗ Trợ
+- **[TÍNH_NĂNG_HỖ_TRỢ_1]**: [MÔ_TẢ]
+- **[TÍNH_NĂNG_HỖ_TRỢ_2]**: [MÔ_TẢ]
+- **[TÍNH_NĂNG_HỖ_TRỢ_3]**: [MÔ_TẢ]
 
-## Non-Functional Requirements
+## Yêu Cầu Phi Chức Năng
 
-### Performance Requirements
-- **Response Time**: [PERFORMANCE_TARGET]
-- **Throughput**: [THROUGHPUT_TARGET]
-- **Concurrent Users**: [CONCURRENCY_TARGET]
-- **Data Volume**: [DATA_VOLUME_EXPECTATIONS]
+### Yêu Cầu Hiệu Suất
+- **Thời Gian Phản Hồi**: [MỤC_TIÊU_HIỆU_SUẤT]
+- **Throughput**: [MỤC_TIÊU_THROUGHPUT]
+- **Người Dùng Đồng Thời**: [MỤC_TIÊU_ĐỒNG_THỜI]
+- **Khối Lượng Dữ Liệu**: [KỲ_VỌNG_KHỐI_LƯỢNG_DỮ_LIỆU]
 
-### Security Requirements
-- **Authentication**: [AUTH_REQUIREMENTS]
-- **Authorization**: [AUTHZ_REQUIREMENTS]
-- **Data Protection**: [DATA_PROTECTION_NEEDS]
-- **Compliance**: [COMPLIANCE_REQUIREMENTS]
+### Yêu Cầu Bảo Mật
+- **Xác Thực**: [YÊU_CẦU_XÁC_THỰC]
+- **Phân Quyền**: [YÊU_CẦU_PHÂN_QUYỀN]
+- **Bảo Vệ Dữ Liệu**: [NHU_CẦU_BẢO_VỆ_DỮ_LIỆU]
+- **Tuân Thủ**: [YÊU_CẦU_TUÂN_THỦ]
 
-### Usability Requirements
-- **Accessibility**: [ACCESSIBILITY_STANDARDS]
-- **Browser Support**: [BROWSER_REQUIREMENTS]
-- **Mobile Support**: [MOBILE_REQUIREMENTS]
-- **Internationalization**: [I18N_REQUIREMENTS]
+### Yêu Cầu Khả Năng Sử Dụng
+- **Khả Năng Tiếp Cận**: [TIÊU_CHUẨN_TIẾP_CẬN]
+- **Hỗ Trợ Trình Duyệt**: [YÊU_CẦU_TRÌNH_DUYỆT]
+- **Hỗ Trợ Di Động**: [YÊU_CẦU_DI_ĐỘNG]
+- **Quốc Tế Hóa**: [YÊU_CẦU_I18N]
 
-### Reliability Requirements
-- **Uptime**: [UPTIME_TARGET]
-- **Error Rate**: [ERROR_RATE_TARGET]
-- **Recovery Time**: [RECOVERY_TIME_TARGET]
-- **Backup Requirements**: [BACKUP_STRATEGY]
+### Yêu Cầu Độ Tin Cậy
+- **Thời Gian Hoạt Động**: [MỤC_TIÊU_UPTIME]
+- **Tỷ Lệ Lỗi**: [MỤC_TIÊU_TỶ_LỆ_LỖI]
+- **Thời Gian Phục Hồi**: [MỤC_TIÊU_THỜI_GIAN_PHỤC_HỒI]
+- **Yêu Cầu Sao Lưu**: [CHIẾN_LƯỢC_SAO_LƯU]
 
-## Technical Constraints
+## Ràng Buộc Kỹ Thuật
 
-### Technology Constraints
-- **Required Technologies**: [MUST_USE_TECHNOLOGIES]
-- **Prohibited Technologies**: [CANNOT_USE_TECHNOLOGIES]
-- **Version Requirements**: [SPECIFIC_VERSION_CONSTRAINTS]
-- **Platform Limitations**: [PLATFORM_CONSTRAINTS]
+### Ràng Buộc Công Nghệ
+- **Công Nghệ Bắt Buộc**: [CÔNG_NGHỆ_PHẢI_SỬ_DỤNG]
+- **Công Nghệ Cấm**: [CÔNG_NGHỆ_KHÔNG_ĐƯỢC_SỬ_DỤNG]
+- **Yêu Cầu Phiên Bản**: [RÀNG_BUỘC_PHIÊN_BẢN_CỤ_THỂ]
+- **Giới Hạn Nền Tảng**: [RÀNG_BUỘC_NỀN_TẢNG]
 
-### Integration Requirements
-- **External Systems**: [SYSTEMS_TO_INTEGRATE_WITH]
-- **APIs to Consume**: [EXTERNAL_APIS]
-- **APIs to Provide**: [APIS_WE_MUST_PROVIDE]
-- **Data Exchange Formats**: [DATA_FORMAT_REQUIREMENTS]
+### Yêu Cầu Tích Hợp
+- **Hệ Thống Bên Ngoài**: [HỆ_THỐNG_CẦN_TÍCH_HỢP]
+- **APIs Cần Sử Dụng**: [APIS_BÊN_NGOÀI]
+- **APIs Cần Cung Cấp**: [APIS_CHÚNG_TA_PHẢI_CUNG_CẤP]
+- **Định Dạng Trao Đổi Dữ Liệu**: [YÊU_CẦU_ĐỊNH_DẠNG_DỮ_LIỆU]
 
-### Deployment Constraints
-- **Environment Requirements**: [DEPLOYMENT_ENVIRONMENT]
-- **Infrastructure Limitations**: [INFRASTRUCTURE_CONSTRAINTS]
-- **Compliance Requirements**: [DEPLOYMENT_COMPLIANCE]
-- **Maintenance Windows**: [MAINTENANCE_CONSTRAINTS]
+### Ràng Buộc Triển Khai
+- **Yêu Cầu Môi Trường**: [MÔI_TRƯỜNG_TRIỂN_KHAI]
+- **Giới Hạn Hạ Tầng**: [RÀNG_BUỘC_HẠ_TẦNG]
+- **Yêu Cầu Tuân Thủ**: [TUÂN_THỦ_TRIỂN_KHAI]
+- **Cửa Sổ Bảo Trì**: [RÀNG_BUỘC_BẢO_TRÌ]
 
-## Data Requirements
+## Yêu Cầu Dữ Liệu
 
-### Data Sources
-- **Primary Data**: [MAIN_DATA_SOURCES]
-- **External Data**: [EXTERNAL_DATA_SOURCES]
-- **User-Generated Data**: [USER_DATA_TYPES]
-- **System-Generated Data**: [SYSTEM_DATA_TYPES]
+### Nguồn Dữ Liệu
+- **Dữ Liệu Chính**: [NGUỒN_DỮ_LIỆU_CHÍNH]
+- **Dữ Liệu Bên Ngoài**: [NGUỒN_DỮ_LIỆU_BÊN_NGOÀI]
+- **Dữ Liệu Do Người Dùng Tạo**: [LOẠI_DỮ_LIỆU_NGƯỜI_DÙNG]
+- **Dữ Liệu Do Hệ Thống Tạo**: [LOẠI_DỮ_LIỆU_HỆ_THỐNG]
 
-### Data Models
+### Mô Hình Dữ Liệu
 ```
-[HIGH_LEVEL_DATA_MODEL]
+[MÔ_HÌNH_DỮ_LIỆU_CẤP_CAO]
 
-Example:
-User
-├── Profile Information
-├── Preferences
-├── Activity History
-└── Relationships
+Ví dụ:
+Người Dùng
+├── Thông Tin Hồ Sơ
+├── Tùy Chọn
+├── Lịch Sử Hoạt Động
+└── Mối Quan Hệ
 
-Content
+Nội Dung
 ├── Metadata
-├── Content Body
-├── Permissions
-└── Version History
+├── Nội Dung Chính
+├── Quyền Hạn
+└── Lịch Sử Phiên Bản
 ```
 
-### Data Governance
-- **Data Ownership**: [WHO_OWNS_WHAT_DATA]
-- **Data Retention**: [RETENTION_POLICIES]
-- **Data Privacy**: [PRIVACY_REQUIREMENTS]
-- **Data Quality**: [QUALITY_STANDARDS]
+### Quản Trị Dữ Liệu
+- **Quyền Sở Hữu Dữ Liệu**: [AI_SỞ_HỮU_DỮ_LIỆU_GÌ]
+- **Lưu Trữ Dữ Liệu**: [CHÍNH_SÁCH_LƯU_TRỮ]
+- **Quyền Riêng Tư Dữ Liệu**: [YÊU_CẦU_QUYỀN_RIÊNG_TƯ]
+- **Chất Lượng Dữ Liệu**: [TIÊU_CHUẨN_CHẤT_LƯỢNG]
 
-## Workflow & Processes
+## Quy Trình Làm Việc & Nghiệp Vụ
 
-### Key User Workflows
-1. **[WORKFLOW_1_NAME]**
-   - **Trigger**: [WHAT_STARTS_THIS_WORKFLOW]
-   - **Steps**: 
-     1. [STEP_1]
-     2. [STEP_2]
-     3. [STEP_3]
-   - **Outcome**: [WHAT_IS_ACHIEVED]
-   - **Exceptions**: [ERROR_CASES_AND_HANDLING]
+### Quy Trình Người Dùng Chính
+1. **[TÊN_QUY_TRÌNH_1]**
+   - **Kích Hoạt**: [ĐIỀU_GÌ_BẮT_ĐẦU_QUY_TRÌNH_NÀY]
+   - **Các Bước**: 
+     1. [BƯỚC_1]
+     2. [BƯỚC_2]
+     3. [BƯỚC_3]
+   - **Kết Quả**: [ĐIỀU_GÌ_ĐẠT_ĐƯỢC]
+   - **Ngoại Lệ**: [TRƯỜNG_HỢP_LỖI_VÀ_XỬ_LÝ]
 
-2. **[WORKFLOW_2_NAME]**
-   - **Trigger**: [WHAT_STARTS_THIS_WORKFLOW]
-   - **Steps**: 
-     1. [STEP_1]
-     2. [STEP_2]
-     3. [STEP_3]
-   - **Outcome**: [WHAT_IS_ACHIEVED]
-   - **Exceptions**: [ERROR_CASES_AND_HANDLING]
+2. **[TÊN_QUY_TRÌNH_2]**
+   - **Kích Hoạt**: [ĐIỀU_GÌ_BẮT_ĐẦU_QUY_TRÌNH_NÀY]
+   - **Các Bước**: 
+     1. [BƯỚC_1]
+     2. [BƯỚC_2]
+     3. [BƯỚC_3]
+   - **Kết Quả**: [ĐIỀU_GÌ_ĐẠT_ĐƯỢC]
+   - **Ngoại Lệ**: [TRƯỜNG_HỢP_LỖI_VÀ_XỬ_LÝ]
 
-### Business Processes
-- **[PROCESS_1]**: [DESCRIPTION_AND_REQUIREMENTS]
-- **[PROCESS_2]**: [DESCRIPTION_AND_REQUIREMENTS]
-- **[PROCESS_3]**: [DESCRIPTION_AND_REQUIREMENTS]
+### Quy Trình Kinh Doanh
+- **[QUY_TRÌNH_1]**: [MÔ_TẢ_VÀ_YÊU_CẦU]
+- **[QUY_TRÌNH_2]**: [MÔ_TẢ_VÀ_YÊU_CẦU]
+- **[QUY_TRÌNH_3]**: [MÔ_TẢ_VÀ_YÊU_CẦU]
 
-## Success Criteria
+## Tiêu Chí Thành Công
 
-### MVP Success Criteria
-- [ ] [MVP_CRITERIA_1]
-- [ ] [MVP_CRITERIA_2]
-- [ ] [MVP_CRITERIA_3]
-- [ ] [MVP_CRITERIA_4]
+### Tiêu Chí Thành Công MVP
+- [ ] [TIÊU_CHÍ_MVP_1]
+- [ ] [TIÊU_CHÍ_MVP_2]
+- [ ] [TIÊU_CHÍ_MVP_3]
+- [ ] [TIÊU_CHÍ_MVP_4]
 
-### Phase 1 Success Criteria
-- [ ] [PHASE1_CRITERIA_1]
-- [ ] [PHASE1_CRITERIA_2]
-- [ ] [PHASE1_CRITERIA_3]
-- [ ] [PHASE1_CRITERIA_4]
+### Tiêu Chí Thành Công Giai Đoạn 1
+- [ ] [TIÊU_CHÍ_GIAI_ĐOẠN_1_1]
+- [ ] [TIÊU_CHÍ_GIAI_ĐOẠN_1_2]
+- [ ] [TIÊU_CHÍ_GIAI_ĐOẠN_1_3]
+- [ ] [TIÊU_CHÍ_GIAI_ĐOẠN_1_4]
 
-### Long-term Success Criteria
-- [ ] [LONGTERM_CRITERIA_1]
-- [ ] [LONGTERM_CRITERIA_2]
-- [ ] [LONGTERM_CRITERIA_3]
-- [ ] [LONGTERM_CRITERIA_4]
+### Tiêu Chí Thành Công Dài Hạn
+- [ ] [TIÊU_CHÍ_DÀI_HẠN_1]
+- [ ] [TIÊU_CHÍ_DÀI_HẠN_2]
+- [ ] [TIÊU_CHÍ_DÀI_HẠN_3]
+- [ ] [TIÊU_CHÍ_DÀI_HẠN_4]
 
-## Risk Assessment
+## Đánh Giá Rủi Ro
 
-### Technical Risks
-- **[RISK_1]**: [DESCRIPTION] - **Mitigation**: [MITIGATION_STRATEGY]
-- **[RISK_2]**: [DESCRIPTION] - **Mitigation**: [MITIGATION_STRATEGY]
-- **[RISK_3]**: [DESCRIPTION] - **Mitigation**: [MITIGATION_STRATEGY]
+### Rủi Ro Kỹ Thuật
+- **[RỦI_RO_1]**: [MÔ_TẢ] - **Giảm Thiểu**: [CHIẾN_LƯỢC_GIẢM_THIỂU]
+- **[RỦI_RO_2]**: [MÔ_TẢ] - **Giảm Thiểu**: [CHIẾN_LƯỢC_GIẢM_THIỂU]
+- **[RỦI_RO_3]**: [MÔ_TẢ] - **Giảm Thiểu**: [CHIẾN_LƯỢC_GIẢM_THIỂU]
 
-### Business Risks
-- **[RISK_1]**: [DESCRIPTION] - **Mitigation**: [MITIGATION_STRATEGY]
-- **[RISK_2]**: [DESCRIPTION] - **Mitigation**: [MITIGATION_STRATEGY]
-- **[RISK_3]**: [DESCRIPTION] - **Mitigation**: [MITIGATION_STRATEGY]
+### Rủi Ro Kinh Doanh
+- **[RỦI_RO_1]**: [MÔ_TẢ] - **Giảm Thiểu**: [CHIẾN_LƯỢC_GIẢM_THIỂU]
+- **[RỦI_RO_2]**: [MÔ_TẢ] - **Giảm Thiểu**: [CHIẾN_LƯỢC_GIẢM_THIỂU]
+- **[RỦI_RO_3]**: [MÔ_TẢ] - **Giảm Thiểu**: [CHIẾN_LƯỢC_GIẢM_THIỂU]
 
-### User Adoption Risks
-- **[RISK_1]**: [DESCRIPTION] - **Mitigation**: [MITIGATION_STRATEGY]
-- **[RISK_2]**: [DESCRIPTION] - **Mitigation**: [MITIGATION_STRATEGY]
-- **[RISK_3]**: [DESCRIPTION] - **Mitigation**: [MITIGATION_STRATEGY]
+### Rủi Ro Chấp Nhận Người Dùng
+- **[RỦI_RO_1]**: [MÔ_TẢ] - **Giảm Thiểu**: [CHIẾN_LƯỢC_GIẢM_THIỂU]
+- **[RỦI_RO_2]**: [MÔ_TẢ] - **Giảm Thiểu**: [CHIẾN_LƯỢC_GIẢM_THIỂU]
+- **[RỦI_RO_3]**: [MÔ_TẢ] - **Giảm Thiểu**: [CHIẾN_LƯỢC_GIẢM_THIỂU]
 
-## Assumptions & Dependencies
+## Giả Định & Phụ Thuộc
 
-### Key Assumptions
-- [ASSUMPTION_1]
-- [ASSUMPTION_2]
-- [ASSUMPTION_3]
-- [ASSUMPTION_4]
+### Giả Định Chính
+- [GIẢ_ĐỊNH_1]
+- [GIẢ_ĐỊNH_2]
+- [GIẢ_ĐỊNH_3]
+- [GIẢ_ĐỊNH_4]
 
-### External Dependencies
-- **[DEPENDENCY_1]**: [DESCRIPTION_AND_IMPACT]
-- **[DEPENDENCY_2]**: [DESCRIPTION_AND_IMPACT]
-- **[DEPENDENCY_3]**: [DESCRIPTION_AND_IMPACT]
+### Phụ Thuộc Bên Ngoài
+- **[PHỤ_THUỘC_1]**: [MÔ_TẢ_VÀ_TÁC_ĐỘNG]
+- **[PHỤ_THUỘC_2]**: [MÔ_TẢ_VÀ_TÁC_ĐỘNG]
+- **[PHỤ_THUỘC_3]**: [MÔ_TẢ_VÀ_TÁC_ĐỘNG]
 
-### Internal Dependencies
-- **[DEPENDENCY_1]**: [DESCRIPTION_AND_IMPACT]
-- **[DEPENDENCY_2]**: [DESCRIPTION_AND_IMPACT]
-- **[DEPENDENCY_3]**: [DESCRIPTION_AND_IMPACT]
+### Phụ Thuộc Nội Bộ
+- **[PHỤ_THUỘC_1]**: [MÔ_TẢ_VÀ_TÁC_ĐỘNG]
+- **[PHỤ_THUỘC_2]**: [MÔ_TẢ_VÀ_TÁC_ĐỘNG]
+- **[PHỤ_THUỘC_3]**: [MÔ_TẢ_VÀ_TÁC_ĐỘNG]
 
-## Communication Guidelines
+## Hướng Dẫn Giao Tiếp
 
-### Stakeholder Communication
-- **Primary Stakeholder**: [NAME_AND_ROLE] - [COMMUNICATION_FREQUENCY]
-- **Secondary Stakeholders**: [NAMES_AND_ROLES] - [COMMUNICATION_FREQUENCY]
-- **End Users**: [USER_GROUPS] - [FEEDBACK_MECHANISMS]
+### Giao Tiếp Với Các Bên Liên Quan
+- **Bên Liên Quan Chính**: [TÊN_VÀ_VAI_TRÒ] - [TẦN_SUẤT_GIAO_TIẾP]
+- **Bên Liên Quan Phụ**: [TÊN_VÀ_VAI_TRÒ] - [TẦN_SUẤT_GIAO_TIẾP]
+- **Người Dùng Cuối**: [NHÓM_NGƯỜI_DÙNG] - [CƠ_CHẾ_PHẢN_HỒI]
 
-### Progress Reporting
-- **Frequency**: [REPORTING_SCHEDULE]
-- **Format**: [REPORTING_FORMAT]
-- **Metrics to Track**: [KEY_METRICS]
-- **Escalation Process**: [ESCALATION_PROCEDURE]
+### Báo Cáo Tiến Độ
+- **Tần Suất**: [LỊCH_BÁO_CÁO]
+- **Định Dạng**: [ĐỊNH_DẠNG_BÁO_CÁO]
+- **Chỉ Số Theo Dõi**: [CHỈ_SỐ_CHÍNH]
+- **Quy Trình Báo Cáo Vấn Đề**: [QUY_TRÌNH_BÁO_CÁO]
 
 ---
 
-**Template Usage Instructions:**
-1. Replace all [PLACEHOLDER] values with project-specific information
-2. Remove sections that don't apply to your project
-3. Add additional sections as needed for your domain
-4. Keep this document updated as requirements evolve
-5. Use this as the primary reference for business context
+**Hướng Dẫn Sử Dụng Template:**
+1. Thay thế tất cả giá trị [PLACEHOLDER] bằng thông tin cụ thể của dự án
+2. Xóa các phần không áp dụng cho dự án của bạn
+3. Thêm các phần bổ sung theo nhu cầu lĩnh vực của bạn
+4. Giữ tài liệu này được cập nhật khi yêu cầu thay đổi
+5. Sử dụng làm tài liệu tham khảo chính cho ngữ cảnh kinh doanh
 
-**Maintenance Guidelines:**
-- Review and update monthly or after major requirement changes
-- Validate with stakeholders regularly
-- Keep aligned with project_plan.md
-- Use as input for story creation and prioritization
+**Hướng Dẫn Bảo Trì:**
+- Xem xét và cập nhật hàng tháng hoặc sau những thay đổi yêu cầu lớn
+- Xác thực với các bên liên quan thường xuyên
+- Giữ đồng bộ với project_plan.md
+- Sử dụng làm đầu vào cho việc tạo story và ưu tiên hóa
+
+**Lưu Ý**: Tài liệu này nên được cập nhật thường xuyên khi dự án phát triển và có thông tin mới. Mỗi phần nên được điền với các chi tiết cụ thể liên quan đến dự án của bạn.
+
+**Cập Nhật Lần Cuối**: [NGÀY]
+**Được Cập Nhật Bởi**: [TÊN]
+**Phiên Bản**: [SỐ_PHIÊN_BẢN]

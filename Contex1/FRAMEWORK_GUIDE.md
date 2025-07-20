@@ -1,163 +1,163 @@
-# Story-Driven Development Framework - Complete Guide
+# Framework Phát Triển Dựa Trên Câu Chuyện - Hướng Dẫn Hoàn Chỉnh
 
-This comprehensive guide explains how to use the Story-Driven Development Framework to build any application with just one prompt.
+Hướng dẫn toàn diện này giải thích cách sử dụng Framework Phát Triển Dựa Trên Câu Chuyện để xây dựng bất kỳ ứng dụng nào chỉ với một prompt.
 
-## Table of Contents
+## Mục Lục
 
-1. [Framework Philosophy](#framework-philosophy)
-2. [Setup and Initialization](#setup-and-initialization)
-3. [The 7-Step Story Process](#the-7-step-story-process)
-4. [Template Usage Guide](#template-usage-guide)
-5. [AI Collaboration Best Practices](#ai-collaboration-best-practices)
-6. [Quality Assurance](#quality-assurance)
-7. [Common Patterns and Examples](#common-patterns-and-examples)
-8. [Troubleshooting Guide](#troubleshooting-guide)
-9. [Advanced Techniques](#advanced-techniques)
+1. [Triết Lý Framework](#triết-lý-framework)
+2. [Thiết Lập và Khởi Tạo](#thiết-lập-và-khởi-tạo)
+3. [Quy Trình 7 Bước](#quy-trình-7-bước)
+4. [Hướng Dẫn Sử Dụng Template](#hướng-dẫn-sử-dụng-template)
+5. [Thực Hành Tốt Nhất Khi Hợp Tác Với AI](#thực-hành-tốt-nhất-khi-hợp-tác-với-ai)
+6. [Đảm Bảo Chất Lượng](#đảm-bảo-chất-lượng)
+7. [Mẫu Thông Dụng và Ví Dụ](#mẫu-thông-dụng-và-ví-dụ)
+8. [Hướng Dẫn Khắc Phục Sự Cố](#hướng-dẫn-khắc-phục-sự-cố)
+9. [Kỹ Thuật Nâng Cao](#kỹ-thuật-nâng-cao)
 
-## Framework Philosophy
+## Triết Lý Framework
 
-### Core Concepts
+### Khái Niệm Cốt Lõi
 
-**Story-Driven Development** breaks down complex applications into manageable, user-focused stories. Each story represents a complete piece of functionality that delivers value to users.
+**Phát Triển Dựa Trên Câu Chuyện** chia nhỏ các ứng dụng phức tạp thành những câu chuyện có thể quản lý được, tập trung vào người dùng. Mỗi câu chuyện đại diện cho một phần chức năng hoàn chỉnh mang lại giá trị cho người dùng.
 
-**Key Principles:**
-- **User-Centric**: Every story focuses on user value
-- **Incremental**: Build functionality piece by piece
-- **Validated**: Each story is thoroughly tested and verified
-- **Documented**: Maintain comprehensive documentation throughout
-- **Collaborative**: AI and human work together effectively
+**Nguyên Tắc Chính:**
+- **Lấy Người Dùng Làm Trung Tâm**: Mọi câu chuyện đều tập trung vào giá trị người dùng
+- **Tăng Dần**: Xây dựng chức năng từng phần một
+- **Được Xác Thực**: Mỗi câu chuyện được kiểm thử và xác minh kỹ lưỡng
+- **Có Tài Liệu**: Duy trì tài liệu toàn diện trong suốt quá trình
+- **Hợp Tác**: AI và con người làm việc cùng nhau hiệu quả
 
-### Why This Approach Works
+### Tại Sao Phương Pháp Này Hiệu Quả
 
-1. **Reduces Complexity**: Large projects become manageable chunks
-2. **Improves Quality**: Validation at each step prevents issues
-3. **Enables Iteration**: Easy to adjust based on feedback
-4. **Maintains Focus**: Clear objectives for each development cycle
-5. **Scales Effectively**: Process works for small and large projects
+1. **Giảm Độ Phức Tạp**: Các dự án lớn trở thành những phần có thể quản lý
+2. **Cải Thiện Chất Lượng**: Xác thực ở mỗi bước ngăn ngừa vấn đề
+3. **Cho Phép Lặp Lại**: Dễ dàng điều chỉnh dựa trên phản hồi
+4. **Duy Trì Tập Trung**: Mục tiêu rõ ràng cho mỗi chu kỳ phát triển
+5. **Mở Rộng Hiệu Quả**: Quy trình hoạt động cho cả dự án nhỏ và lớn
 
-## Setup and Initialization
+## Thiết Lập và Khởi Tạo
 
-### Step 1: Project Setup
+### Bước 1: Thiết Lập Dự Án
 
-1. **Copy Framework Files**
+1. **Sao Chép Các Tệp Framework**
    ```
-   cp -r Contex1/ your-project-name/
-   cd your-project-name/
+   cp -r Contex1/ ten-du-an-cua-ban/
+   cd ten-du-an-cua-ban/
    ```
 
-2. **Initialize Git Repository** (recommended)
+2. **Khởi Tạo Repository Git** (được khuyến nghị)
    ```
    git init
    git add .
-   git commit -m "Initial framework setup"
+   git commit -m "Thiết lập framework ban đầu"
    ```
 
-### Step 2: Define Project Context
+### Bước 2: Định Nghĩa Ngữ Cảnh Dự Án
 
-**Fill out PROJECT_CONTEXT.md with your specific information:**
+**Điền thông tin cụ thể của bạn vào PROJECT_CONTEXT.md:**
 
 ```markdown
-# Example: E-commerce Platform
+# Ví dụ: Nền Tảng Thương Mại Điện Tử
 
-## Business Context
-### Problem Statement
-**Primary Problem**: Small businesses need an affordable, easy-to-use online store
-**Target Users**: Small business owners with limited technical expertise
-**Current Pain Points**: 
-- Existing solutions are too expensive
-- Complex setup and maintenance
-- Limited customization options
+## Ngữ Cảnh Kinh Doanh
+### Phát Biểu Vấn Đề
+**Vấn Đề Chính**: Các doanh nghiệp nhỏ cần một cửa hàng trực tuyến giá cả phải chăng, dễ sử dụng
+**Người Dùng Mục Tiêu**: Chủ doanh nghiệp nhỏ với kiến thức kỹ thuật hạn chế
+**Điểm Đau Hiện Tại**: 
+- Các giải pháp hiện có quá đắt
+- Thiết lập và bảo trì phức tạp
+- Tùy chọn tùy chỉnh hạn chế
 ```
 
-**Key Sections to Complete:**
-- Business Context and Problem Statement
-- User Personas and Workflows
-- Functional Requirements
-- Technical Constraints
-- Success Criteria
+**Các Phần Chính Cần Hoàn Thành:**
+- Ngữ Cảnh Kinh Doanh và Phát Biểu Vấn Đề
+- Personas Người Dùng và Quy Trình Làm Việc
+- Yêu Cầu Chức Năng
+- Ràng Buộc Kỹ Thuật
+- Tiêu Chí Thành Công
 
-### Step 3: Create Initial Project Plan
+### Bước 3: Tạo Kế Hoạch Dự Án Ban Đầu
 
-**Update project_plan.md with:**
+**Cập nhật project_plan.md với:**
 
 ```markdown
-# E-commerce Platform Project Plan
+# Kế Hoạch Dự Án Nền Tảng Thương Mại Điện Tử
 
-## Project Overview
-**Project Name**: SimpleStore
-**Vision**: Affordable, easy-to-use e-commerce platform for small businesses
-**Target Launch**: Q2 2024
+## Tổng Quan Dự Án
+**Tên Dự Án**: SimpleStore
+**Tầm Nhìn**: Nền tảng thương mại điện tử giá cả phải chăng, dễ sử dụng cho doanh nghiệp nhỏ
+**Mục Tiêu Ra Mắt**: Q2 2024
 
-## Phase 1: MVP (Months 1-2)
-### Stories:
-1. User Registration and Authentication
-2. Product Catalog Management
-3. Shopping Cart Functionality
-4. Basic Checkout Process
-5. Order Management Dashboard
+## Giai Đoạn 1: MVP (Tháng 1-2)
+### Các Câu Chuyện:
+1. Đăng Ký và Xác Thực Người Dùng
+2. Quản Lý Danh Mục Sản Phẩm
+3. Chức Năng Giỏ Hàng
+4. Quy Trình Thanh Toán Cơ Bản
+5. Bảng Điều Khiển Quản Lý Đơn Hàng
 ```
 
-### Step 4: Define Architecture
+### Bước 4: Định Nghĩa Kiến Trúc
 
-**Complete architecture.md with:**
+**Hoàn thành architecture.md với:**
 
 ```markdown
-# SimpleStore Architecture
+# Kiến Trúc SimpleStore
 
-## Technology Stack
-**Frontend**: React with TypeScript
-**Backend**: Node.js with Express
-**Database**: PostgreSQL
-**Authentication**: JWT with bcrypt
-**Payment**: Stripe integration
+## Ngăn Xếp Công Nghệ
+**Frontend**: React với TypeScript
+**Backend**: Node.js với Express
+**Cơ Sở Dữ Liệu**: PostgreSQL
+**Xác Thực**: JWT với bcrypt
+**Thanh Toán**: Tích hợp Stripe
 **Hosting**: AWS (EC2, RDS, S3)
 ```
 
-## The 7-Step Story Process
+## Quy Trình 7 Bước
 
-### Step 1: Story Analysis
+### Bước 1: Phân Tích Câu Chuyện
 
-**Objective**: Understand requirements and define acceptance criteria
+**Mục Tiêu**: Hiểu yêu cầu và định nghĩa tiêu chí chấp nhận
 
-**Activities:**
-- Break down the story into specific requirements
-- Identify user workflows and edge cases
-- Define clear acceptance criteria
-- Estimate complexity and effort
+**Hoạt Động:**
+- Chia nhỏ câu chuyện thành các yêu cầu cụ thể
+- Xác định quy trình làm việc của người dùng và các trường hợp biên
+- Định nghĩa tiêu chí chấp nhận rõ ràng
+- Ước tính độ phức tạp và nỗ lực
 
-**Example:**
+**Ví Dụ:**
 ```markdown
-## Story: User Registration and Authentication
+## Câu Chuyện: Đăng Ký và Xác Thực Người Dùng
 
-### Requirements:
-- Users can create accounts with email/password
-- Email verification required
-- Password reset functionality
-- Secure session management
+### Yêu Cầu:
+- Người dùng có thể tạo tài khoản với email/mật khẩu
+- Yêu cầu xác minh email
+- Chức năng đặt lại mật khẩu
+- Quản lý phiên bảo mật
 
-### Acceptance Criteria:
-- [ ] User can register with valid email and strong password
-- [ ] Email verification link sent and functional
-- [ ] User can log in with verified credentials
-- [ ] User can reset password via email
-- [ ] Sessions expire after 24 hours of inactivity
+### Tiêu Chí Chấp Nhận:
+- [ ] Người dùng có thể đăng ký với email hợp lệ và mật khẩu mạnh
+- [ ] Liên kết xác minh email được gửi và hoạt động
+- [ ] Người dùng có thể đăng nhập với thông tin đã xác minh
+- [ ] Người dùng có thể đặt lại mật khẩu qua email
+- [ ] Phiên hết hạn sau 24 giờ không hoạt động
 ```
 
-### Step 2: Technical Design
+### Bước 2: Thiết Kế Kỹ Thuật
 
-**Objective**: Plan implementation approach and architecture
+**Mục Tiêu**: Lập kế hoạch phương pháp triển khai và kiến trúc
 
-**Activities:**
-- Design data models and API endpoints
-- Plan component structure and interactions
-- Identify dependencies and integration points
-- Consider security and performance implications
+**Hoạt Động:**
+- Thiết kế mô hình dữ liệu và API endpoints
+- Lập kế hoạch cấu trúc và tương tác thành phần
+- Xác định phụ thuộc và điểm tích hợp
+- Xem xét tác động bảo mật và hiệu suất
 
-**Example:**
+**Ví Dụ:**
 ```markdown
-## Technical Design: User Authentication
+## Thiết Kế Kỹ Thuật: Xác Thực Người Dùng
 
-### Data Models:
+### Mô Hình Dữ Liệu:
 ```sql
 CREATE TABLE users (
   id UUID PRIMARY KEY,
@@ -176,92 +176,92 @@ CREATE TABLE users (
 - POST /api/auth/reset-password
 ```
 
-### Step 3: Implementation
+### Bước 3: Triển Khai
 
-**Objective**: Write clean, maintainable code
+**Mục Tiêu**: Viết code sạch, dễ bảo trì
 
-**Activities:**
-- Implement backend APIs and database models
-- Create frontend components and pages
-- Add proper error handling and validation
-- Follow coding standards and best practices
+**Hoạt Động:**
+- Triển khai backend APIs và mô hình cơ sở dữ liệu
+- Tạo các thành phần và trang frontend
+- Thêm xử lý lỗi và xác thực phù hợp
+- Tuân theo tiêu chuẩn coding và thực hành tốt nhất
 
-**Best Practices:**
-- Write self-documenting code with clear variable names
-- Add comments for complex logic
-- Use consistent coding style
-- Implement proper error handling
-- Follow security best practices
+**Thực Hành Tốt Nhất:**
+- Viết code tự mô tả với tên biến rõ ràng
+- Thêm comment cho logic phức tạp
+- Sử dụng phong cách coding nhất quán
+- Triển khai xử lý lỗi phù hợp
+- Tuân theo thực hành bảo mật tốt nhất
 
-### Step 4: Testing
+### Bước 4: Kiểm Thử
 
-**Objective**: Verify functionality and edge cases
+**Mục Tiêu**: Xác minh chức năng và các trường hợp biên
 
-**Activities:**
-- Write unit tests for individual functions
-- Create integration tests for API endpoints
-- Test user workflows end-to-end
-- Verify error handling and edge cases
+**Hoạt Động:**
+- Viết unit tests cho các hàm riêng lẻ
+- Tạo integration tests cho API endpoints
+- Kiểm thử quy trình làm việc của người dùng end-to-end
+- Xác minh xử lý lỗi và các trường hợp biên
 
-**Testing Checklist:**
-- [ ] Unit tests for all business logic
-- [ ] API endpoint tests with various inputs
+**Danh Sách Kiểm Tra Testing:**
+- [ ] Unit tests cho tất cả business logic
+- [ ] API endpoint tests với các đầu vào khác nhau
 - [ ] Frontend component tests
 - [ ] End-to-end user workflow tests
-- [ ] Error handling and validation tests
+- [ ] Error handling và validation tests
 - [ ] Security vulnerability tests
 
-### Step 5: Integration
+### Bước 5: Tích Hợp
 
-**Objective**: Ensure compatibility with existing code
+**Mục Tiêu**: Đảm bảo tương thích với code hiện có
 
-**Activities:**
-- Integrate new code with existing systems
-- Test interactions between components
-- Verify data consistency and integrity
-- Update configuration and deployment scripts
+**Hoạt Động:**
+- Tích hợp code mới với hệ thống hiện có
+- Kiểm thử tương tác giữa các thành phần
+- Xác minh tính nhất quán và toàn vẹn dữ liệu
+- Cập nhật cấu hình và scripts triển khai
 
-**Integration Checklist:**
-- [ ] New code integrates without breaking existing functionality
-- [ ] Database migrations run successfully
-- [ ] API changes are backward compatible
-- [ ] Frontend routing and navigation work correctly
-- [ ] Third-party integrations function properly
+**Danh Sách Kiểm Tra Tích Hợp:**
+- [ ] Code mới tích hợp mà không phá vỡ chức năng hiện có
+- [ ] Database migrations chạy thành công
+- [ ] Thay đổi API tương thích ngược
+- [ ] Frontend routing và navigation hoạt động chính xác
+- [ ] Tích hợp bên thứ ba hoạt động đúng
 
-### Step 6: Documentation
+### Bước 6: Tài Liệu
 
-**Objective**: Update relevant documentation
+**Mục Tiêu**: Cập nhật tài liệu liên quan
 
-**Activities:**
-- Update API documentation
-- Add user guides and help text
-- Document configuration changes
-- Update deployment and maintenance guides
+**Hoạt Động:**
+- Cập nhật tài liệu API
+- Thêm hướng dẫn người dùng và văn bản trợ giúp
+- Tài liệu hóa thay đổi cấu hình
+- Cập nhật hướng dẫn triển khai và bảo trì
 
-**Documentation Updates:**
-- [ ] API documentation reflects new endpoints
-- [ ] User guide includes new features
-- [ ] Technical documentation updated
-- [ ] Deployment guide reflects changes
-- [ ] Troubleshooting guide updated
+**Cập Nhật Tài Liệu:**
+- [ ] Tài liệu API phản ánh endpoints mới
+- [ ] Hướng dẫn người dùng bao gồm tính năng mới
+- [ ] Tài liệu kỹ thuật được cập nhật
+- [ ] Hướng dẫn triển khai phản ánh thay đổi
+- [ ] Hướng dẫn khắc phục sự cố được cập nhật
 
-### Step 7: Validation
+### Bước 7: Xác Thực
 
-**Objective**: Confirm story completion and quality
+**Mục Tiêu**: Xác nhận hoàn thành câu chuyện và chất lượng
 
-**Activities:**
-- Review all acceptance criteria
-- Conduct code review
-- Perform user acceptance testing
-- Update project tracking and metrics
+**Hoạt Động:**
+- Xem xét tất cả tiêu chí chấp nhận
+- Tiến hành code review
+- Thực hiện user acceptance testing
+- Cập nhật theo dõi dự án và metrics
 
-**Validation Checklist:**
-- [ ] All acceptance criteria met
-- [ ] Code review completed and approved
-- [ ] User acceptance testing passed
-- [ ] Performance requirements met
-- [ ] Security review completed
-- [ ] Documentation updated and reviewed
+**Danh Sách Kiểm Tra Xác Thực:**
+- [ ] Tất cả tiêu chí chấp nhận được đáp ứng
+- [ ] Code review hoàn thành và được phê duyệt
+- [ ] User acceptance testing đã vượt qua
+- [ ] Yêu cầu hiệu suất được đáp ứng
+- [ ] Security review hoàn thành
+- [ ] Tài liệu được cập nhật và xem xét
 
 ## Template Usage Guide
 
