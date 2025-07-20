@@ -1,0 +1,43 @@
+{
+  "allowedCommands": [
+    "tao-prp",
+    "thuc-thi-prp"
+  ],
+  "allowedDirectories": [
+    ".",
+    "PRPs",
+    "examples",
+    "src",
+    "tests",
+    "docs"
+  ],
+  "allowedFileExtensions": [
+    ".py",
+    ".md",
+    ".json",
+    ".yaml",
+    ".yml",
+    ".txt",
+    ".js",
+    ".ts",
+    ".jsx",
+    ".tsx",
+    ".html",
+    ".css",
+    ".scss",
+    ".sql",
+    ".env",
+    ".gitignore",
+    ".dockerignore",
+    "Dockerfile",
+    "requirements.txt",
+    "package.json",
+    "pyproject.toml"
+  ],
+  "maxFileSize": "10MB",
+  "enableWebSearch": true,
+  "enableCodeExecution": true,
+  "enableFileOperations": true,
+  "autoSave": true,
+  "backupBeforeModification": true
+}
