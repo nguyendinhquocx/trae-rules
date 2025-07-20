@@ -1,245 +1,245 @@
-# Technical Considerations - [PROJECT_NAME]
+# Cân Nhắc Kỹ Thuật - [TÊN_DỰ_ÁN]
 
-This document captures lessons learned, implementation decisions, and technical insights from our story-driven development process.
+Tài liệu này ghi lại các bài học kinh nghiệm, quyết định triển khai và hiểu biết kỹ thuật từ quy trình phát triển dựa trên câu chuyện của chúng ta.
 
-## Implementation Decisions
+## Quyết Định Triển Khai
 
-### Architecture Choices
+### Lựa Chọn Kiến Trúc
 
-#### [DECISION_CATEGORY_1]
-**Decision**: [WHAT_WAS_DECIDED]
-**Rationale**: [WHY_THIS_APPROACH]
-**Alternatives Considered**: [OTHER_OPTIONS]
-**Trade-offs**: [PROS_AND_CONS]
-**Story Context**: [WHICH_STORY_LED_TO_THIS]
+#### [DANH_MỤC_QUYẾT_ĐỊNH_1]
+**Quyết định**: [ĐIỀU_ĐÃ_QUYẾT_ĐỊNH]
+**Lý do**: [TẠI_SAO_CHỌN_CÁCH_TIẾP_CẬN_NÀY]
+**Các lựa chọn khác đã xem xét**: [CÁC_LỰA_CHỌN_KHÁC]
+**Đánh đổi**: [ƯU_NHƯỢC_ĐIỂM]
+**Ngữ cảnh câu chuyện**: [CÂU_CHUYỆN_NÀO_DẪN_ĐẾN_ĐIỀU_NÀY]
 
-#### [DECISION_CATEGORY_2]
-**Decision**: [WHAT_WAS_DECIDED]
-**Rationale**: [WHY_THIS_APPROACH]
-**Alternatives Considered**: [OTHER_OPTIONS]
-**Trade-offs**: [PROS_AND_CONS]
-**Story Context**: [WHICH_STORY_LED_TO_THIS]
+#### [DANH_MỤC_QUYẾT_ĐỊNH_2]
+**Quyết định**: [ĐIỀU_ĐÃ_QUYẾT_ĐỊNH]
+**Lý do**: [TẠI_SAO_CHỌN_CÁCH_TIẾP_CẬN_NÀY]
+**Các lựa chọn khác đã xem xét**: [CÁC_LỰA_CHỌN_KHÁC]
+**Đánh đổi**: [ƯU_NHƯỢC_ĐIỂM]
+**Ngữ cảnh câu chuyện**: [CÂU_CHUYỆN_NÀO_DẪN_ĐẾN_ĐIỀU_NÀY]
 
-### Technology Stack Decisions
+### Quyết Định Ngăn Xếp Công Nghệ
 
-#### [TECHNOLOGY_CHOICE_1]
-**Chosen**: [SELECTED_TECHNOLOGY]
-**Reason**: [JUSTIFICATION]
-**Impact**: [HOW_IT_AFFECTS_DEVELOPMENT]
-**Lessons**: [WHAT_WE_LEARNED]
+#### [LỰA_CHỌN_CÔNG_NGHỆ_1]
+**Đã chọn**: [CÔNG_NGHỆ_ĐÃ_CHỌN]
+**Lý do**: [BIỆN_MINH]
+**Tác động**: [ẢNH_HƯỞNG_ĐẾN_PHÁT_TRIỂN]
+**Bài học**: [ĐIỀU_CHÚNG_TA_HỌC_ĐƯỢC]
 
-#### [TECHNOLOGY_CHOICE_2]
-**Chosen**: [SELECTED_TECHNOLOGY]
-**Reason**: [JUSTIFICATION]
-**Impact**: [HOW_IT_AFFECTS_DEVELOPMENT]
-**Lessons**: [WHAT_WE_LEARNED]
+#### [LỰA_CHỌN_CÔNG_NGHỆ_2]
+**Đã chọn**: [CÔNG_NGHỆ_ĐÃ_CHỌN]
+**Lý do**: [BIỆN_MINH]
+**Tác động**: [ẢNH_HƯỞNG_ĐẾN_PHÁT_TRIỂN]
+**Bài học**: [ĐIỀU_CHÚNG_TA_HỌC_ĐƯỢC]
 
-## Lessons Learned
+## Bài Học Kinh Nghiệm
 
-### Development Patterns That Work
+### Các Mẫu Phát Triển Hiệu Quả
 
-#### [PATTERN_NAME_1]
-**Pattern**: [DESCRIPTION_OF_PATTERN]
-**Use Case**: [WHEN_TO_USE]
-**Implementation**: [HOW_TO_IMPLEMENT]
-**Benefits**: [WHY_IT_WORKS]
-**Example**: [CODE_OR_REFERENCE]
+#### [TÊN_MẪU_1]
+**Mẫu**: [MÔ_TẢ_MẪU]
+**Trường hợp sử dụng**: [KHI_NÀO_SỬ_DỤNG]
+**Triển khai**: [CÁCH_TRIỂN_KHAI]
+**Lợi ích**: [TẠI_SAO_HIỆU_QUẢ]
+**Ví dụ**: [MÃ_HOẶC_THAM_CHIẾU]
 
-#### [PATTERN_NAME_2]
-**Pattern**: [DESCRIPTION_OF_PATTERN]
-**Use Case**: [WHEN_TO_USE]
-**Implementation**: [HOW_TO_IMPLEMENT]
-**Benefits**: [WHY_IT_WORKS]
-**Example**: [CODE_OR_REFERENCE]
+#### [TÊN_MẪU_2]
+**Mẫu**: [MÔ_TẢ_MẪU]
+**Trường hợp sử dụng**: [KHI_NÀO_SỬ_DỤNG]
+**Triển khai**: [CÁCH_TRIỂN_KHAI]
+**Lợi ích**: [TẠI_SAO_HIỆU_QUẢ]
+**Ví dụ**: [MÃ_HOẶC_THAM_CHIẾU]
 
-### Anti-Patterns to Avoid
+### Các Mẫu Phản Diện Cần Tránh
 
-#### [ANTI_PATTERN_1]
-**Problem**: [WHAT_WENT_WRONG]
-**Why It Failed**: [ROOT_CAUSE]
-**Better Approach**: [RECOMMENDED_SOLUTION]
-**Story Context**: [WHERE_WE_LEARNED_THIS]
+#### [MẪU_PHẢN_DIỆN_1]
+**Vấn đề**: [ĐIỀU_GÌ_ĐÃ_SAI]
+**Tại sao thất bại**: [NGUYÊN_NHÂN_GỐC]
+**Cách tiếp cận tốt hơn**: [GIẢI_PHÁP_ĐỀ_XUẤT]
+**Ngữ cảnh câu chuyện**: [NƠI_CHÚNG_TA_HỌC_ĐƯỢC_ĐIỀU_NÀY]
 
-#### [ANTI_PATTERN_2]
-**Problem**: [WHAT_WENT_WRONG]
-**Why It Failed**: [ROOT_CAUSE]
-**Better Approach**: [RECOMMENDED_SOLUTION]
-**Story Context**: [WHERE_WE_LEARNED_THIS]
+#### [MẪU_PHẢN_DIỆN_2]
+**Vấn đề**: [ĐIỀU_GÌ_ĐÃ_SAI]
+**Tại sao thất bại**: [NGUYÊN_NHÂN_GỐC]
+**Cách tiếp cận tốt hơn**: [GIẢI_PHÁP_ĐỀ_XUẤT]
+**Ngữ cảnh câu chuyện**: [NƠI_CHÚNG_TA_HỌC_ĐƯỢC_ĐIỀU_NÀY]
 
-## Technical Challenges & Solutions
+## Thách Thức Kỹ Thuật & Giải Pháp
 
-### [CHALLENGE_CATEGORY_1]
+### [DANH_MỤC_THÁCH_THỨC_1]
 
-#### Challenge: [SPECIFIC_PROBLEM]
-**Context**: [WHEN_IT_OCCURRED]
-**Root Cause**: [WHY_IT_HAPPENED]
-**Solution**: [HOW_WE_SOLVED_IT]
-**Prevention**: [HOW_TO_AVOID_IN_FUTURE]
-**Time Impact**: [HOW_LONG_IT_TOOK]
+#### Thách thức: [VẤN_ĐỀ_CỤ_THỂ]
+**Ngữ cảnh**: [KHI_NÀO_XẢY_RA]
+**Nguyên nhân gốc**: [TẠI_SAO_XẢY_RA]
+**Giải pháp**: [CÁCH_CHÚNG_TA_GIẢI_QUYẾT]
+**Phòng ngừa**: [CÁCH_TRÁNH_TRONG_TƯƠNG_LAI]
+**Tác động thời gian**: [MẤT_BAO_LÂU]
 
-#### Challenge: [SPECIFIC_PROBLEM]
-**Context**: [WHEN_IT_OCCURRED]
-**Root Cause**: [WHY_IT_HAPPENED]
-**Solution**: [HOW_WE_SOLVED_IT]
-**Prevention**: [HOW_TO_AVOID_IN_FUTURE]
-**Time Impact**: [HOW_LONG_IT_TOOK]
+#### Thách thức: [VẤN_ĐỀ_CỤ_THỂ]
+**Ngữ cảnh**: [KHI_NÀO_XẢY_RA]
+**Nguyên nhân gốc**: [TẠI_SAO_XẢY_RA]
+**Giải pháp**: [CÁCH_CHÚNG_TA_GIẢI_QUYẾT]
+**Phòng ngừa**: [CÁCH_TRÁNH_TRONG_TƯƠNG_LAI]
+**Tác động thời gian**: [MẤT_BAO_LÂU]
 
-### [CHALLENGE_CATEGORY_2]
+### [DANH_MỤC_THÁCH_THỨC_2]
 
-#### Challenge: [SPECIFIC_PROBLEM]
-**Context**: [WHEN_IT_OCCURRED]
-**Root Cause**: [WHY_IT_HAPPENED]
-**Solution**: [HOW_WE_SOLVED_IT]
-**Prevention**: [HOW_TO_AVOID_IN_FUTURE]
-**Time Impact**: [HOW_LONG_IT_TOOK]
+#### Thách thức: [VẤN_ĐỀ_CỤ_THỂ]
+**Ngữ cảnh**: [KHI_NÀO_XẢY_RA]
+**Nguyên nhân gốc**: [TẠI_SAO_XẢY_RA]
+**Giải pháp**: [CÁCH_CHÚNG_TA_GIẢI_QUYẾT]
+**Phòng ngừa**: [CÁCH_TRÁNH_TRONG_TƯƠNG_LAI]
+**Tác động thời gian**: [MẤT_BAO_LÂU]
 
-## Performance Considerations
+## Cân Nhắc Hiệu Suất
 
-### [PERFORMANCE_AREA_1]
-**Concern**: [WHAT_COULD_BE_SLOW]
-**Measurement**: [HOW_WE_MEASURE]
-**Current Status**: [CURRENT_PERFORMANCE]
-**Optimization Strategy**: [HOW_TO_IMPROVE]
-**Priority**: [HIGH/MEDIUM/LOW]
+### [LĨNH_VỰC_HIỆU_SUẤT_1]
+**Mối quan tâm**: [ĐIỀU_GÌ_CÓ_THỂ_CHẬM]
+**Đo lường**: [CÁCH_CHÚNG_TA_ĐO]
+**Trạng thái hiện tại**: [HIỆU_SUẤT_HIỆN_TẠI]
+**Chiến lược tối ưu hóa**: [CÁCH_CẢI_THIỆN]
+**Ưu tiên**: [CAO/TRUNG_BÌNH/THẤP]
 
-### [PERFORMANCE_AREA_2]
-**Concern**: [WHAT_COULD_BE_SLOW]
-**Measurement**: [HOW_WE_MEASURE]
-**Current Status**: [CURRENT_PERFORMANCE]
-**Optimization Strategy**: [HOW_TO_IMPROVE]
-**Priority**: [HIGH/MEDIUM/LOW]
+### [LĨNH_VỰC_HIỆU_SUẤT_2]
+**Mối quan tâm**: [ĐIỀU_GÌ_CÓ_THỂ_CHẬM]
+**Đo lường**: [CÁCH_CHÚNG_TA_ĐO]
+**Trạng thái hiện tại**: [HIỆU_SUẤT_HIỆN_TẠI]
+**Chiến lược tối ưu hóa**: [CÁCH_CẢI_THIỆN]
+**Ưu tiên**: [CAO/TRUNG_BÌNH/THẤP]
 
-## Testing Strategies
+## Chiến Lược Kiểm Thử
 
-### What Works Well
+### Những Gì Hoạt Động Tốt
 
-#### [TESTING_APPROACH_1]
-**Method**: [TESTING_TECHNIQUE]
-**Scope**: [WHAT_IT_COVERS]
-**Tools**: [TESTING_TOOLS_USED]
-**Effectiveness**: [HOW_WELL_IT_WORKS]
-**Time Investment**: [EFFORT_REQUIRED]
+#### [CÁCH_TIẾP_CẬN_KIỂM_THỬ_1]
+**Phương pháp**: [KỸ_THUẬT_KIỂM_THỬ]
+**Phạm vi**: [ĐIỀU_GÌ_ĐƯỢC_BAO_PHỦ]
+**Công cụ**: [CÔNG_CỤ_KIỂM_THỬ_SỬ_DỤNG]
+**Hiệu quả**: [HOẠT_ĐỘNG_TỐT_NHƯ_THẾ_NÀO]
+**Đầu tư thời gian**: [NỖ_LỰC_CẦN_THIẾT]
 
-#### [TESTING_APPROACH_2]
-**Method**: [TESTING_TECHNIQUE]
-**Scope**: [WHAT_IT_COVERS]
-**Tools**: [TESTING_TOOLS_USED]
-**Effectiveness**: [HOW_WELL_IT_WORKS]
-**Time Investment**: [EFFORT_REQUIRED]
+#### [CÁCH_TIẾP_CẬN_KIỂM_THỬ_2]
+**Phương pháp**: [KỸ_THUẬT_KIỂM_THỬ]
+**Phạm vi**: [ĐIỀU_GÌ_ĐƯỢC_BAO_PHỦ]
+**Công cụ**: [CÔNG_CỤ_KIỂM_THỬ_SỬ_DỤNG]
+**Hiệu quả**: [HOẠT_ĐỘNG_TỐT_NHƯ_THẾ_NÀO]
+**Đầu tư thời gian**: [NỖ_LỰC_CẦN_THIẾT]
 
-### Testing Challenges
+### Thách Thức Kiểm Thử
 
-#### [TESTING_CHALLENGE_1]
-**Problem**: [WHAT_IS_HARD_TO_TEST]
-**Why Difficult**: [ROOT_CAUSE]
-**Current Approach**: [HOW_WE_HANDLE_IT]
-**Future Improvement**: [BETTER_SOLUTION]
+#### [THÁCH_THỨC_KIỂM_THỬ_1]
+**Vấn đề**: [ĐIỀU_GÌ_KHÓ_KIỂM_THỬ]
+**Tại sao khó khăn**: [NGUYÊN_NHÂN_GỐC]
+**Cách tiếp cận hiện tại**: [CÁCH_CHÚNG_TA_XỬ_LÝ]
+**Cải thiện trong tương lai**: [GIẢI_PHÁP_TỐT_HƠN]
 
-#### [TESTING_CHALLENGE_2]
-**Problem**: [WHAT_IS_HARD_TO_TEST]
-**Why Difficult**: [ROOT_CAUSE]
-**Current Approach**: [HOW_WE_HANDLE_IT]
-**Future Improvement**: [BETTER_SOLUTION]
+#### [THÁCH_THỨC_KIỂM_THỬ_2]
+**Vấn đề**: [ĐIỀU_GÌ_KHÓ_KIỂM_THỬ]
+**Tại sao khó khăn**: [NGUYÊN_NHÂN_GỐC]
+**Cách tiếp cận hiện tại**: [CÁCH_CHÚNG_TA_XỬ_LÝ]
+**Cải thiện trong tương lai**: [GIẢI_PHÁP_TỐT_HƠN]
 
-## Development Workflow Insights
+## Hiểu Biết Về Quy Trình Phát Triển
 
-### Story Sizing
-**Optimal Size**: [IDEAL_STORY_SCOPE]
-**Too Large Indicators**: [SIGNS_STORY_TOO_BIG]
-**Too Small Indicators**: [SIGNS_STORY_TOO_SMALL]
-**Splitting Strategy**: [HOW_TO_BREAK_DOWN]
+### Định Cỡ Câu Chuyện
+**Kích thước tối ưu**: [PHẠM_VI_CÂU_CHUYỆN_LÝ_TƯỞNG]
+**Dấu hiệu quá lớn**: [DẤU_HIỆU_CÂU_CHUYỆN_QUÁ_LỚN]
+**Dấu hiệu quá nhỏ**: [DẤU_HIỆU_CÂU_CHUYỆN_QUÁ_NHỎ]
+**Chiến lược chia nhỏ**: [CÁCH_CHIA_NHỎ]
 
-### Validation Effectiveness
-**Most Valuable Checks**: [WHICH_VALIDATIONS_CATCH_ISSUES]
-**Time Wasters**: [VALIDATIONS_THAT_DONT_HELP]
-**Human Verification**: [WHAT_HUMANS_CATCH_BEST]
-**Automation Opportunities**: [WHAT_CAN_BE_AUTOMATED]
+### Hiệu Quả Xác Thực
+**Kiểm tra có giá trị nhất**: [XÁC_THỰC_NÀO_PHÁT_HIỆN_VẤN_ĐỀ]
+**Lãng phí thời gian**: [XÁC_THỰC_KHÔNG_HỮU_ÍCH]
+**Xác minh của con người**: [CON_NGƯỜI_PHÁT_HIỆN_TỐT_NHẤT_GÌ]
+**Cơ hội tự động hóa**: [GÌ_CÓ_THỂ_TỰ_ĐỘNG_HÓA]
 
-### Knowledge Transfer
-**Documentation That Helps**: [USEFUL_DOCS]
-**Documentation Gaps**: [MISSING_INFORMATION]
-**Learning Curve**: [ONBOARDING_CHALLENGES]
-**Best Practices**: [KNOWLEDGE_SHARING_TIPS]
+### Chuyển Giao Kiến Thức
+**Tài liệu hữu ích**: [TÀI_LIỆU_HỮU_ÍCH]
+**Khoảng trống tài liệu**: [THÔNG_TIN_THIẾU]
+**Đường cong học tập**: [THÁCH_THỨC_ONBOARDING]
+**Thực hành tốt nhất**: [MẸO_CHIA_SẺ_KIẾN_THỨC]
 
-## Technical Debt
+## Nợ Kỹ Thuật
 
-### Current Debt Items
+### Các Mục Nợ Hiện Tại
 
-#### [DEBT_ITEM_1]
-**Description**: [WHAT_NEEDS_FIXING]
-**Impact**: [HOW_IT_AFFECTS_DEVELOPMENT]
-**Effort to Fix**: [TIME_ESTIMATE]
-**Priority**: [HIGH/MEDIUM/LOW]
-**Workaround**: [TEMPORARY_SOLUTION]
+#### [MỤC_NỢ_1]
+**Mô tả**: [ĐIỀU_CẦN_SỬA]
+**Tác động**: [ẢNH_HƯỞNG_ĐẾN_PHÁT_TRIỂN]
+**Nỗ lực để sửa**: [ƯỚC_TÍNH_THỜI_GIAN]
+**Ưu tiên**: [CAO/TRUNG_BÌNH/THẤP]
+**Giải pháp tạm thời**: [GIẢI_PHÁP_TẠM_THỜI]
 
-#### [DEBT_ITEM_2]
-**Description**: [WHAT_NEEDS_FIXING]
-**Impact**: [HOW_IT_AFFECTS_DEVELOPMENT]
-**Effort to Fix**: [TIME_ESTIMATE]
-**Priority**: [HIGH/MEDIUM/LOW]
-**Workaround**: [TEMPORARY_SOLUTION]
+#### [MỤC_NỢ_2]
+**Mô tả**: [ĐIỀU_CẦN_SỬA]
+**Tác động**: [ẢNH_HƯỞNG_ĐẾN_PHÁT_TRIỂN]
+**Nỗ lực để sửa**: [ƯỚC_TÍNH_THỜI_GIAN]
+**Ưu tiên**: [CAO/TRUNG_BÌNH/THẤP]
+**Giải pháp tạm thời**: [GIẢI_PHÁP_TẠM_THỜI]
 
-### Debt Prevention
-**Early Warning Signs**: [INDICATORS_OF_DEBT]
-**Prevention Strategies**: [HOW_TO_AVOID]
-**Acceptable Debt**: [WHEN_DEBT_IS_OK]
-**Debt Review Process**: [HOW_TO_MANAGE]
+### Phòng Ngừa Nợ
+**Dấu hiệu cảnh báo sớm**: [CHỈ_BÁO_CỦA_NỢ]
+**Chiến lược phòng ngừa**: [CÁCH_TRÁNH]
+**Nợ có thể chấp nhận**: [KHI_NÀO_NỢ_LÀ_OK]
+**Quy trình xem xét nợ**: [CÁCH_QUẢN_LÝ]
 
-## Future Improvements
+## Cải Tiến Tương Lai
 
-### Short-term (Next 1-3 Stories)
-- [IMPROVEMENT_1]: [DESCRIPTION_AND_BENEFIT]
-- [IMPROVEMENT_2]: [DESCRIPTION_AND_BENEFIT]
-- [IMPROVEMENT_3]: [DESCRIPTION_AND_BENEFIT]
+### Ngắn hạn (1-3 Câu chuyện tiếp theo)
+- [CẢI_TIẾN_1]: [MÔ_TẢ_VÀ_LỢI_ÍCH]
+- [CẢI_TIẾN_2]: [MÔ_TẢ_VÀ_LỢI_ÍCH]
+- [CẢI_TIẾN_3]: [MÔ_TẢ_VÀ_LỢI_ÍCH]
 
-### Medium-term (Next Phase)
-- [IMPROVEMENT_1]: [DESCRIPTION_AND_BENEFIT]
-- [IMPROVEMENT_2]: [DESCRIPTION_AND_BENEFIT]
-- [IMPROVEMENT_3]: [DESCRIPTION_AND_BENEFIT]
+### Trung hạn (Giai đoạn tiếp theo)
+- [CẢI_TIẾN_1]: [MÔ_TẢ_VÀ_LỢI_ÍCH]
+- [CẢI_TIẾN_2]: [MÔ_TẢ_VÀ_LỢI_ÍCH]
+- [CẢI_TIẾN_3]: [MÔ_TẢ_VÀ_LỢI_ÍCH]
 
-### Long-term (Future Versions)
-- [IMPROVEMENT_1]: [DESCRIPTION_AND_BENEFIT]
-- [IMPROVEMENT_2]: [DESCRIPTION_AND_BENEFIT]
-- [IMPROVEMENT_3]: [DESCRIPTION_AND_BENEFIT]
+### Dài hạn (Phiên bản tương lai)
+- [CẢI_TIẾN_1]: [MÔ_TẢ_VÀ_LỢI_ÍCH]
+- [CẢI_TIẾN_2]: [MÔ_TẢ_VÀ_LỢI_ÍCH]
+- [CẢI_TIẾN_3]: [MÔ_TẢ_VÀ_LỢI_ÍCH]
 
-## Tools & Dependencies
+## Công Cụ & Phụ Thuộc
 
-### Development Tools
-**Essential Tools**: [MUST_HAVE_TOOLS]
-**Helpful Tools**: [NICE_TO_HAVE_TOOLS]
-**Tool Issues**: [PROBLEMATIC_TOOLS]
-**Tool Recommendations**: [SUGGESTED_ALTERNATIVES]
+### Công Cụ Phát Triển
+**Công cụ thiết yếu**: [CÔNG_CỤ_BẮT_BUỘC]
+**Công cụ hữu ích**: [CÔNG_CỤ_TỐT_NẾU_CÓ]
+**Vấn đề công cụ**: [CÔNG_CỤ_CÓ_VẤN_ĐỀ]
+**Đề xuất công cụ**: [LỰA_CHỌN_THAY_THẾ_ĐỀ_XUẤT]
 
-### Dependencies
-**Core Dependencies**: [CRITICAL_LIBRARIES]
-**Dependency Issues**: [PROBLEMATIC_DEPENDENCIES]
-**Update Strategy**: [HOW_TO_MANAGE_UPDATES]
-**Alternative Options**: [BACKUP_CHOICES]
+### Phụ Thuộc
+**Phụ thuộc cốt lõi**: [THƯ_VIỆN_QUAN_TRỌNG]
+**Vấn đề phụ thuộc**: [PHỤ_THUỘC_CÓ_VẤN_ĐỀ]
+**Chiến lược cập nhật**: [CÁCH_QUẢN_LÝ_CẬP_NHẬT]
+**Lựa chọn thay thế**: [LỰA_CHỌN_DỰ_PHÒNG]
 
-## Metrics & Monitoring
+## Chỉ Số & Giám Sát
 
-### Development Metrics
-**Story Completion Time**: [AVERAGE_TIME]
-**Build Success Rate**: [PERCENTAGE]
-**Bug Discovery Rate**: [ISSUES_PER_STORY]
-**Rework Frequency**: [HOW_OFTEN_WE_REDO]
+### Chỉ Số Phát Triển
+**Thời gian hoàn thành câu chuyện**: [THỜI_GIAN_TRUNG_BÌNH]
+**Tỷ lệ thành công build**: [PHẦN_TRĂM]
+**Tỷ lệ phát hiện lỗi**: [VẤN_ĐỀ_TRÊN_MỖI_CÂU_CHUYỆN]
+**Tần suất làm lại**: [TẦN_SUẤT_LÀM_LẠI]
 
-### Quality Metrics
-**Code Quality Indicators**: [WHAT_WE_MEASURE]
-**User Experience Metrics**: [UX_MEASUREMENTS]
-**Performance Benchmarks**: [SPEED_TARGETS]
-**Reliability Measures**: [STABILITY_METRICS]
+### Chỉ Số Chất Lượng
+**Chỉ báo chất lượng code**: [ĐIỀU_CHÚNG_TA_ĐO]
+**Chỉ số trải nghiệm người dùng**: [ĐO_LƯỜNG_UX]
+**Điểm chuẩn hiệu suất**: [MỤC_TIÊU_TỐC_ĐỘ]
+**Thước đo độ tin cậy**: [CHỈ_SỐ_ỔN_ĐỊNH]
 
 ---
 
-**Template Usage Notes:**
-- Replace all [PLACEHOLDER] values with project-specific information
-- Add new sections as you discover patterns and challenges
-- Update regularly after each story completion
-- Use this as a reference for future similar projects
+**Ghi Chú Sử Dụng Template:**
+- Thay thế tất cả giá trị [PLACEHOLDER] bằng thông tin cụ thể của dự án
+- Thêm các phần mới khi bạn khám phá ra các mẫu và thách thức
+- Cập nhật thường xuyên sau mỗi lần hoàn thành câu chuyện
+- Sử dụng làm tài liệu tham khảo cho các dự án tương tự trong tương lai
 
-**Maintenance Guidelines:**
-- Review and update monthly
-- Archive outdated information
-- Prioritize actionable insights
-- Share learnings with team members
+**Hướng Dẫn Bảo Trì:**
+- Xem xét và cập nhật hàng tháng
+- Lưu trữ thông tin lỗi thời
+- Ưu tiên những hiểu biết có thể hành động
+- Chia sẻ bài học với các thành viên trong nhóm
