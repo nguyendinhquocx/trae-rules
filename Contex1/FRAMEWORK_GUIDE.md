@@ -5,14 +5,15 @@ Hướng dẫn toàn diện này giải thích cách sử dụng Framework Phát
 ## Mục Lục
 
 1. [Triết Lý Framework](#triết-lý-framework)
-2. [Thiết Lập và Khởi Tạo](#thiết-lập-và-khởi-tạo)
-3. [Quy Trình 7 Bước](#quy-trình-7-bước)
-4. [Hướng Dẫn Sử Dụng Template](#hướng-dẫn-sử-dụng-template)
-5. [Thực Hành Tốt Nhất Khi Hợp Tác Với AI](#thực-hành-tốt-nhất-khi-hợp-tác-với-ai)
-6. [Đảm Bảo Chất Lượng](#đảm-bảo-chất-lượng)
-7. [Mẫu Thông Dụng và Ví Dụ](#mẫu-thông-dụng-và-ví-dụ)
-8. [Hướng Dẫn Khắc Phục Sự Cố](#hướng-dẫn-khắc-phục-sự-cố)
-9. [Kỹ Thuật Nâng Cao](#kỹ-thuật-nâng-cao)
+2. [Tiêu Chuẩn Phát Triển](#tiêu-chuẩn-phát-triển)
+3. [Thiết Lập và Khởi Tạo](#thiết-lập-và-khởi-tạo)
+4. [Quy Trình 7 Bước](#quy-trình-7-bước)
+5. [Hướng Dẫn Sử Dụng Template](#hướng-dẫn-sử-dụng-template)
+6. [Thực Hành Tốt Nhất Khi Hợp Tác Với AI](#thực-hành-tốt-nhất-khi-hợp-tác-với-ai)
+7. [Đảm Bảo Chất Lượng](#đảm-bảo-chất-lượng)
+8. [Mẫu Thông Dụng và Ví Dụ](#mẫu-thông-dụng-và-ví-dụ)
+9. [Hướng Dẫn Khắc Phục Sự Cố](#hướng-dẫn-khắc-phục-sự-cố)
+10. [Kỹ Thuật Nâng Cao](#kỹ-thuật-nâng-cao)
 
 ## Triết Lý Framework
 
@@ -34,6 +35,35 @@ Hướng dẫn toàn diện này giải thích cách sử dụng Framework Phát
 3. **Cho Phép Lặp Lại**: Dễ dàng điều chỉnh dựa trên phản hồi
 4. **Duy Trì Tập Trung**: Mục tiêu rõ ràng cho mỗi chu kỳ phát triển
 5. **Mở Rộng Hiệu Quả**: Quy trình hoạt động cho cả dự án nhỏ và lớn
+
+## Tiêu Chuẩn Phát Triển
+
+> **Quan Trọng**: Framework này tuân theo các tiêu chuẩn phát triển nghiêm ngặt được định nghĩa trong [development_standards.md](./development_standards.md). Vui lòng đọc kỹ tài liệu này trước khi bắt đầu phát triển.
+
+### Triết Lý Thiết Kế Cốt Lõi
+
+Framework áp dụng triết lý **"Less, but better"** - tập trung vào chất lượng hơn số lượng:
+
+- **Màu Sắc**: Sử dụng bảng màu tối giản với tối đa 3-4 màu chính
+- **Typography**: Ưu tiên khả năng đọc và phân cấp rõ ràng
+- **Components**: Thiết kế có thể tái sử dụng và nhất quán
+- **Icons**: Sử dụng SVG với thiết kế đơn giản, rõ ràng
+
+### Tiêu Chuẩn UI/UX
+
+- **Layout**: Responsive design với mobile-first approach
+- **Spacing**: Hệ thống spacing nhất quán (8px grid system)
+- **Accessibility**: Tuân thủ WCAG 2.1 AA guidelines
+- **Performance**: Tối ưu hóa tốc độ tải và tương tác
+
+### Quy Trình Giao Tiếp
+
+- **Báo Cáo Tiến Độ**: Cập nhật hàng ngày qua commit messages rõ ràng
+- **Code Review**: Bắt buộc cho mọi thay đổi quan trọng
+- **Documentation**: Cập nhật đồng thời với code changes
+- **Testing**: Test-driven development được khuyến khích
+
+Xem chi tiết đầy đủ trong [development_standards.md](./development_standards.md).
 
 ## Thiết Lập và Khởi Tạo
 

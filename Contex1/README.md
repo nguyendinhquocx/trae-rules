@@ -16,6 +16,8 @@ Framework này cho phép bạn:
 ```
 Contex1/
 ├── README.md                 # Tệp này - tổng quan framework và cách sử dụng
+├── FRAMEWORK_GUIDE.md        # Hướng dẫn hoàn chỉnh sử dụng framework
+├── development_standards.md  # Tiêu chuẩn phát triển và quy tắc cốt lõi
 ├── CLAUDE.md                 # Hướng dẫn và ngữ cảnh cho AI assistant
 ├── pair_programming.md       # Quy trình phát triển và tiêu chuẩn chất lượng
 ├── project_plan.md          # Template lập kế hoạch dự án và quản lý câu chuyện
@@ -28,20 +30,23 @@ Contex1/
 
 ### 1. Khởi Tạo Dự Án
 
-1. **Sao chép framework này** vào thư mục dự án của bạn
-2. **Điền vào PROJECT_CONTEXT.md** với thông tin cụ thể của bạn:
+1. **Đọc tiêu chuẩn phát triển**: Bắt đầu bằng việc đọc kỹ [development_standards.md](./development_standards.md) để hiểu các quy tắc cốt lõi
+
+2. **Sao chép framework này** vào thư mục dự án của bạn
+
+3. **Điền vào PROJECT_CONTEXT.md** với thông tin cụ thể của bạn:
    - Yêu cầu kinh doanh
    - Kiến thức lĩnh vực
    - Personas người dùng
    - Ràng buộc kỹ thuật
    - Tiêu chí thành công
 
-3. **Cập nhật project_plan.md** với:
+4. **Cập nhật project_plan.md** với:
    - Tổng quan dự án
    - Phân tích câu chuyện ban đầu
    - Metrics thành công
 
-4. **Định nghĩa architecture.md** với:
+5. **Định nghĩa architecture.md** với:
    - Ngăn xếp công nghệ
    - Kiến trúc hệ thống
    - Điểm tích hợp
@@ -67,6 +72,8 @@ Contex1/
 
 ## Nguyên Tắc Cốt Lõi
 
+> **Quan Trọng**: Framework này tuân theo triết lý **"Less, but better"** và các tiêu chuẩn nghiêm ngặt được định nghĩa trong [development_standards.md](./development_standards.md).
+
 ### Phát Triển Dựa Trên Câu Chuyện
 - **Câu Chuyện Là Đơn Vị**: Mỗi tính năng là một câu chuyện hoàn chỉnh, có thể kiểm thử
 - **Tiến Độ Tăng Dần**: Xây dựng chức năng từng phần một
@@ -75,9 +82,10 @@ Contex1/
 
 ### Tiêu Chuẩn Chất Lượng
 - **Chất Lượng Code**: Code sạch, dễ bảo trì, được tài liệu hóa tốt
-- **Kiểm Thử**: Kiểm thử toàn diện ở mỗi bước
+- **Thiết Kế UI/UX**: Tuân thủ nguyên tắc "Less, but better" với focus vào accessibility
+- **Kiểm Thử**: Test-driven development với coverage >80%
 - **Tài Liệu**: Giữ tài liệu cập nhật và hữu ích
-- **Hiệu Suất**: Xem xét tác động hiệu suất từ sớm
+- **Hiệu Suất**: Tối ưu hóa từ sớm với mobile-first approach
 
 ### Hợp Tác AI
 - **Nhận Thức Ngữ Cảnh**: AI hiểu ngữ cảnh kinh doanh và kỹ thuật
